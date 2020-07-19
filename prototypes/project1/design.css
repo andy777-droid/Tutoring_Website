@@ -1,0 +1,342 @@
+    /*-------------------------------------- HTML styling ------------------------------------------------ */
+    
+    body,
+    html {
+        background: url(back.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        font-family: "Times New Roman", Times, serif;
+        min-width: 100vh;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    
+    .header {
+        color: white;
+        border-bottom-style: solid;
+        border-bottom: 3px solid white;
+        height: 90px;
+    }
+    
+    .footer {
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        font-size: 20px;
+        color: white;
+        border-top: 2px solid white;
+        bottom: 0;
+    }
+    
+    .content {
+        flex-grow: 1;
+    }
+    
+    #heading {
+        float: left;
+        margin-left: 20px;
+        font-size: 38px;
+        font-weight: bold;
+        height: 90px;
+        line-height: 90px;
+    }
+    
+    #heading-small {
+        float: left;
+        margin-left: 20px;
+        font-size: 38px;
+        font-weight: bold;
+        height: 90px;
+        line-height: 90px;
+        display: none;
+    }
+    
+    .icon {
+        float: left;
+        width: 100px;
+        height: 90px;
+        line-height: 90px;
+        border-left: 3px solid white;
+    }
+    
+    a {
+        margin-right: 20px;
+        float: right;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        border: 4px solid white;
+        border-radius: 20px;
+        padding: 10px;
+        margin-top: 18px;
+    }
+    
+    a:hover {
+        font-size: 30px;
+    }
+    
+    .hamburger {
+        margin-right: 30px;
+        float: right;
+        font-size: 40px;
+        line-height: 90px;
+        display: none;
+    }
+    
+    #link {
+        display: none;
+    }
+    
+    .clienthome {
+        width: 90%;
+        height: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .imagehome {
+        width: 90%;
+        height: 50%;
+        margin-bottom: 30px;
+    }
+    
+    .captionHome {
+        margin-bottom: 30px;
+        font-weight: bold;
+        font-size: 25px;
+    }
+    
+    .left {
+        background-color: rgb(255, 255, 255, 0.7);
+        border-radius: 30px;
+        text-align: center;
+        padding-bottom: 5vh;
+        width: 70%;
+        font-size: 20px;
+        font-weight: bold;
+        height: fit-content;
+        display: inline-block;
+    }
+    
+    .mid {
+        background-color: rgb(255, 255, 255, 0.7);
+        border-radius: 30px;
+        text-align: center;
+        padding-bottom: 5vh;
+        width: 70%;
+        font-size: 20px;
+        font-weight: bold;
+        height: fit-content;
+        display: inline-block;
+    }
+    
+    .right {
+        background-color: rgb(255, 255, 255, 0.7);
+        border-radius: 30px;
+        text-align: center;
+        padding-bottom: 5vh;
+        width: 70%;
+        font-size: 20px;
+        font-weight: bold;
+        height: fit-content;
+        display: inline-block;
+    }
+    
+    .space {
+        width: 33%;
+        display: inline-block;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    
+    .space2 {
+        width: 33%;
+        display: inline-block;
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    
+    .btn {
+        width: 80%;
+        height: 70px;
+        background-color: #428bca;
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        border-style: none;
+        font-size: 25px;
+    }
+    
+    span {
+        color: #428bca;
+    }
+    
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    h2 {
+        font-size: 40px;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .dropdown-content {
+        top: 48px;
+        right: 55px;
+        width: 250px;
+        display: none;
+        background-color: black;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .dropdown-content a {
+        color: white;
+        height: 70px;
+        line-height: 70px;
+        text-decoration: none;
+        display: block;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0px;
+        border-left: none;
+        border-right: none;
+        border-top: 2px solid white;
+        border-bottom: none;
+        width: 250px;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: white;
+        color: black;
+    }
+    /* -------------------------------Registration and Login page styles-------------------------------------*/
+    
+    .reg {
+        background-color: rgb(255, 255, 255, 0.6);
+        color: black;
+        width: 400px;
+        height: 750px;
+        text-align: center;
+        padding-top: 30px;
+        border-radius: 25px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    
+    .login {
+        background-color: rgb(255, 255, 255, 0.6);
+        color: black;
+        width: 400px;
+        height: 450px;
+        text-align: center;
+        padding-top: 30px;
+        border-radius: 25px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    input {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom-color: black;
+        background-color: rgb(255, 255, 255, -0.6);
+        color: rgb(0, 0, 0, 1);
+        font-size: 18px;
+        font-weight: bold;
+        outline: none;
+        height: 35px;
+        width: 200px;
+    }
+    
+    .check {
+        width: 13px;
+        height: 13px;
+        margin: 0;
+        vertical-align: bottom;
+        position: relative;
+        top: -px;
+    }
+    
+    label {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .psw {
+        font-size: 18px;
+        font-weight: bold;
+        display: block;
+        padding-left: 15px;
+        text-indent: -15px;
+    }
+    /*---------------------------------Screen responsive styles--------------------------------------------*/
+    
+    @media only screen and (max-width: 900px) {
+        .hamburger {
+            display: block;
+            cursor: pointer;
+        }
+        .menu {
+            display: none;
+        }
+        input[type=checkbox]:checked~.dropdown-content {
+            display: block;
+        }
+        .space {
+            width: 49%;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+        .space2 {
+            width: 100%;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+        .right {
+            width: 35%;
+        }
+    }
+    
+    @media only screen and (max-width: 650px) {
+        #heading {
+            display: none;
+        }
+        #heading-small {
+            display: block;
+            margin-left: 18%;
+        }
+        .space {
+            width: 100%;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+        .space2 {
+            width: 100%;
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+        .right,
+        .left,
+        .mid {
+            width: 60%
+        }
+    }

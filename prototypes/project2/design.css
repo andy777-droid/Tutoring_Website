@@ -1,0 +1,240 @@
+body,
+html {
+    min-width: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #00cccc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    background-color: #202020;
+    height: 95px;
+    line-height: 95px;
+    color: white;
+    top: 0;
+}
+
+.logo {
+    height: 75px;
+    line-height: 95px;
+    float: left;
+    margin-top: 10px;
+}
+
+.Title {
+    float: left;
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu {
+    float: right;
+    line-height: 95px;
+}
+
+.menu a {
+    margin-right: 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    font-size: 25px;
+}
+
+.main-info {
+    background-color: #00cccc;
+    flex-grow: 1;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.image-frame-1 {
+    width: 85%;
+    height: fit-content;
+    text-align: center;
+    background-color: rgb(54, 52, 52);
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.image-frame-1:hover {
+    width: 90%;
+    transition: width 1s;
+}
+
+.image-frame-2 {
+    width: 85%;
+    height: fit-content;
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.image-frame-2:hover {
+    width: 90%;
+    transition: width 1s;
+}
+
+.image-frame-3 {
+    width: 85%;
+    height: 500px;
+    text-align: center;
+    background-color: black;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.image-frame-3:hover {
+    width: 90%;
+    transition: width 1s;
+}
+
+.main-icon {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.top-bar {
+    display: block;
+    height: 49%;
+    background-color: #00cccc;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.bottom-bar {
+    display: block;
+    height: 49%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+}
+
+.card {
+    margin: 0 auto;
+    float: none;
+    border-radius: 20px;
+    padding-top: 20px;
+}
+
+.card-img-top {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    float: none;
+}
+
+.card-img-top-2 {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    float: none;
+}
+
+.card-title-1 {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card-title-2 {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card-title-3 {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.main-sentence-4 {
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    float: left;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.btn-primary {
+    border-radius: 10px;
+}
+
+.btn-dark {
+    width: 20%;
+    height: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    float: right;
+    border-radius: 20px;
+}
+
+.register-form {
+    background-color: #202020;
+    color: white;
+    width: 400px;
+    height: 750px;
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.login-form {
+    background-color: #202020;
+    color: white;
+    width: 400px;
+    height: 450px;
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 25px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    border-top: 2px solid white;
+    bottom: 0;
+    background-color: #FFFFFF;
+}
