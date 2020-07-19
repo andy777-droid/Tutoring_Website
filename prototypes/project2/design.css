@@ -62,7 +62,7 @@ header {
     margin-left: auto;
     margin-bottom: 50px;
     border-radius: 20px;
-    padding: 30px;
+    padding: 30px 40px 30px 40px;
 }
 
 .image-frame-1:hover {
@@ -88,7 +88,7 @@ header {
 
 .image-frame-3 {
     width: 85%;
-    height: 500px;
+    height: fit-content;
     text-align: center;
     background-color: black;
     margin-right: auto;
@@ -106,25 +106,6 @@ header {
 .main-icon {
     width: 50%;
     margin: 0 auto;
-}
-
-.top-bar {
-    display: block;
-    height: 49%;
-    background-color: #00cccc;
-    border-radius: 20px;
-    padding: 20px;
-    margin-bottom: 15px;
-    position: relative;
-}
-
-.bottom-bar {
-    display: block;
-    height: 49%;
-    background-color: white;
-    border-radius: 20px;
-    padding: 20px;
-    position: relative;
 }
 
 .card {
@@ -169,35 +150,24 @@ header {
     margin-bottom: 20px;
 }
 
-.main-sentence-4 {
+.card-title-4 {
     font-size: 40px;
-    font-weight: bold;
     color: black;
+    font-weight: bold;
     float: left;
-    margin: 0;
-    position: relative;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
 
 .btn-primary {
     border-radius: 10px;
 }
 
-.btn-dark {
-    width: 20%;
-    height: 50%;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    position: relative;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+.btn-info {
+    border-radius: 15px;
+    width: 300px;
     float: right;
-    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
 }
 
 .register-form {
