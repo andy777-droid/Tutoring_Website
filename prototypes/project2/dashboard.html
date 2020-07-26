@@ -10,9 +10,16 @@
 
 <body>
     <header>
+        <label class="hamburger" for="link">&#9776;</label>
+        <input type="checkbox" id="link">
         <a href="dashboard.html"><img src="logo.png" class="logo"></a>
         <div class="Title">Western Cape Tutors</div>
         <div class="menu">
+            <a href="search.html">Search</a>
+            <a href="post.html">Post</a>
+            <a href="about.html">About</a>
+        </div>
+        <div class="dropdown-content">
             <a href="search.html">Search</a>
             <a href="post.html">Post</a>
             <a href="about.html">About</a>
@@ -23,7 +30,7 @@
 
         <div class="image-frame-1">
             <div class="row">
-                <div class="card" style="width: 80rem; background-color: rgb(83, 79, 79);">
+                <div class="card" id="card-frame-1">
                     <img class="card-img-top-2" src="tutor-home.png" alt="Card image cap">
                     <div class="card-body">
                         <div class="card-title-3">Looking For The Perfect Tutor?</div>
@@ -35,8 +42,8 @@
 
         <div class="image-frame-2">
             <div class="row">
-                <div class="col-sm">
-                    <div class="card" style="width: 30rem; background-color: #4e4b4b;">
+                <div class="col-sm" id="col-frame-2">
+                    <div class="card" id="card-frame-2-1">
                         <img class="card-img-top" src="login.png" alt="Card image cap">
                         <div class="card-body">
                             <div class="card-title-1">Find The Perfect Tutor</div>
@@ -45,8 +52,8 @@
                     </div>
                 </div>
 
-                <div class="col-sm">
-                    <div class="card" style="width: 30rem; background-color: #ababab;">
+                <div class="col-sm" id="col-frame-2">
+                    <div class="card" id="card-frame-2-2">
                         <img class="card-img-top" src="register.jpg" alt="Card image cap">
                         <div class="card-body">
                             <div class="card-title-2">Want To Be A Tutor</div>
@@ -60,14 +67,14 @@
 
         <div class="image-frame-3">
             <div class="row">
-                <div class="col-sm" style="background-color:rgb(83, 79, 79);border-radius: 20px; height: fit-content; margin-bottom: 30px;">
+                <div class="col-sm" id="col-frame-3-1">
                     <div class="card-title-4" style="color: white;">#1 Most Popular Tutor</div>
                     <img src="tutor1.jpg" class="pp">
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-sm" style="background-color: white; border-radius: 20px; height: fit-content; margin-bottom: 30px;">
+                <div class="col-sm" id="col-frame-3-2">
                     <div class="card-title-4">#2 Most Popular Tutor</div>
                     <img src="tutor2.jpg" class="pp">
 
@@ -75,7 +82,7 @@
             </div>
 
             <div class="row">
-                <div class="col-sm" style="background-color:rgb(83, 79, 79); border-radius: 20px; height: fit-content;">
+                <div class="col-sm" id="col-frame-3-3">
                     <div class="card-title-4">#3 Most Popular Tutor</div>
                     <img src="tutor3.jpg" class="pp">
                 </div>

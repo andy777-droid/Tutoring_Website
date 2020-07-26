@@ -5,7 +5,7 @@ html {
     flex-direction: column;
     min-height: 100vh;
     background-color: #00cccc;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
 header {
@@ -78,7 +78,9 @@ header {
     margin-left: auto;
     margin-bottom: 50px;
     border-radius: 20px;
-    padding: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
 }
 
 .image-frame-2:hover {
@@ -233,34 +235,6 @@ header {
     margin-top: 10px;
 }
 
-.register-form {
-    background-color: #202020;
-    color: white;
-    width: 400px;
-    height: 750px;
-    text-align: center;
-    padding-top: 30px;
-    border-radius: 25px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.login-form {
-    background-color: #202020;
-    color: white;
-    width: 400px;
-    height: 450px;
-    text-align: center;
-    padding-top: 30px;
-    border-radius: 25px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 footer {
     height: 70px;
     line-height: 70px;
@@ -269,4 +243,112 @@ footer {
     color: white;
     bottom: 0;
     background-color: black;
+}
+
+.hamburger {
+    margin-right: 30px;
+    float: right;
+    font-size: 40px;
+    line-height: 90px;
+    display: none;
+}
+
+#link {
+    display: none;
+}
+
+.dropdown-content {
+    top: 48px;
+    right: 55px;
+    width: 250px;
+    display: none;
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    height: 70px;
+    line-height: 70px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0px;
+    border-left: none;
+    border-right: none;
+    border-top: 2px solid white;
+    border-bottom: none;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+    color: black;
+}
+
+#card-frame-1 {
+    width: 80rem;
+    background-color: rgb(83, 79, 79);
+}
+
+#card-frame-2-1 {
+    width: 30rem;
+    background-color: #4e4b4b;
+}
+
+#card-frame-2-2 {
+    width: 30rem;
+    background-color: #ababab;
+}
+
+#col-frame-2 {
+    margin-bottom: 30px;
+}
+
+#col-frame-3-1 {
+    background-color: rgb(83, 79, 79);
+    border-radius: 20px;
+    height: fit-content;
+    margin-bottom: 30px;
+}
+
+#col-frame-3-2 {
+    background-color: white;
+    border-radius: 20px;
+    height: fit-content;
+    margin-bottom: 30px;
+}
+
+#col-frame-3-3 {
+    background-color: rgb(83, 79, 79);
+    border-radius: 20px;
+    height: fit-content;
+}
+
+#left-about-col {
+    border-right: 1px solid white;
+}
+
+@media only screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        display: none;
+    }
+    input[type=checkbox]:checked~.dropdown-content {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1276px) {
+    #left-about-col {
+        border-right: none;
+    }
 }
