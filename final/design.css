@@ -1,0 +1,212 @@
+body {
+    background-color: #FFFFFF;
+    min-width: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.main-info {
+    flex-grow: 1;
+}
+
+.header {
+    background-color: #3f3e3e;
+    height: 100px;
+    line-height: 100px;
+    color: white;
+}
+
+.footer {
+    background-color: #3f3e3e;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: white;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.title {
+    font-size: 30px;
+    float: left;
+}
+
+.menu {
+    height: 100px;
+    line-height: 100px;
+    float: right;
+}
+
+.menu a {
+    margin-right: 26px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    font-weight: bold;
+}
+
+h1 {
+    margin-bottom: 100px;
+}
+
+.tutor-home-img {
+    width: 100%;
+    opacity: 0.7;
+    position: relative;
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+}
+
+.center-bottom-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+}
+
+.home-search-left {
+    border-right: 2px solid black;
+}
+
+.card-img-top {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    float: none;
+}
+
+.card-body {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+#home-search-left-card {
+    padding: 30px;
+    margin: 20px;
+}
+
+#home-search-right-card {
+    padding: 30px;
+    margin: 20px;
+}
+
+#home-post-left-card {
+    padding: 30px;
+    margin: 20px;
+}
+
+#home-post-right-card {
+    padding: 30px;
+    margin: 20px;
+}
+
+.search-description {
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.follow-link {
+    text-decoration: none;
+    color: rgb(55, 55, 226);
+    font-size: 18px;
+}
+
+.card-title {
+    margin-bottom: 20px;
+}
+
+.cards {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    margin: 20px;
+}
+
+.categories-title {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h3 {
+    margin-bottom: 30px;
+}
+
+.hamburger {
+    margin-right: 30px;
+    float: right;
+    font-size: 40px;
+    line-height: 100px;
+    display: none;
+}
+
+#link {
+    display: none;
+}
+
+.dropdown-content {
+    right: 60px;
+    top: 48px;
+    width: 80%;
+    display: none;
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    height: 70px;
+    line-height: 70px;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 0px;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    width: 100%;
+    margin: 0;
+    padding-left: 30px;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    color: white;
+    background-color: #1E90FF;
+}
+
+@media only screen and (max-width: 900px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        display: none;
+    }
+    input[type=checkbox]:checked~.dropdown-content {
+        display: block;
+    }
+}
