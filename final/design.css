@@ -82,10 +82,6 @@ h1 {
     font-size: 25px;
 }
 
-.home-search-left {
-    border-right: 2px solid black;
-}
-
 .card-img-top {
     width: 200px;
     height: 200px;
@@ -140,7 +136,7 @@ h1 {
     padding: 16px;
     text-align: center;
     background-color: #f1f1f1;
-    margin: 20px;
+    margin: 30px;
 }
 
 .categories-title {
@@ -149,8 +145,57 @@ h1 {
     margin-bottom: 50px;
 }
 
+#about-cards {
+    border: none;
+    margin-bottom: 40px;
+}
+
+.about-titles {
+    float: left;
+    font-size: 40px;
+    margin: 30px;
+}
+
+.about-cards-body {
+    font-size: 18px;
+    margin: 30px;
+}
+
 h3 {
     margin-bottom: 30px;
+}
+
+.contacts {
+    color: rgb(79, 79, 223);
+}
+
+.contacts:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.footer-buttons-left {
+    text-decoration: none;
+    color: white;
+    margin-right: 50px;
+}
+
+.footer-buttons-left:hover {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-buttons-right {
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+}
+
+.footer-buttons-right:hover {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
 }
 
 .hamburger {
@@ -181,8 +226,7 @@ h3 {
     line-height: 70px;
     text-decoration: none;
     display: block;
-    font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     border-radius: 0px;
     border-left: none;
     border-right: none;
@@ -196,6 +240,13 @@ h3 {
 .dropdown-content a:hover {
     color: white;
     background-color: #1E90FF;
+}
+
+.splash-img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    position: relative;
 }
 
 @media only screen and (max-width: 900px) {
