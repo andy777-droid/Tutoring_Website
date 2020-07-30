@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="design.css">
 </head>
 
-<body style="background-image: url(splash.jpg);">
+<body style="background-image: url(splash.jpg);background-size: cover;">
     <div class="main-info">
         <div class="header">
             <label class="hamburger" for="link">&#9776;</label>
@@ -24,13 +24,37 @@
                 </a>
                 <a href="post.html">Post  <i class="fas fa-user-plus"></i></a>
                 <a href="about.html">About  <i class="fas fa-question-circle"></i></a>
-                <a href=""><i class="fas fa-user"></i></a>
+                <a href="splash.html"><i class="fas fa-user"></i></a>
             </div>
             <div class="dropdown-content">
                 <a href="search.html"><i class="fas fa-search"></i> Search</a>
                 <a href="post.html"><i class="fas fa-user-plus"></i> Post</a>
                 <a href="about.html"><i class="far fa-question-circle"></i> About</a>
             </div>
+        </div>
+
+        <div class="panel">
+            <form class="login" method="POST">
+
+                <h1>Login</h1>
+                <br>
+                <label>Username</label><br>
+                <input type="text" name="username">
+                <br>
+
+                <br>
+                <label>Password</label><br>
+                <input type="password" name="psw" id="idp">
+                <br>
+
+                <br>
+                <label class="psw"><input type="checkbox" class="check" onclick="myFunction()"> Show Password</label>
+                <br>
+
+
+                <br>
+                <button type="submit" class="btn btn-primary btn-lg">Login</button>
+            </form>
         </div>
     </div>
 

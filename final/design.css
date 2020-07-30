@@ -39,6 +39,17 @@ body {
     float: left;
 }
 
+.post-submit {
+    text-align: center;
+    margin: 30px;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 30px;
+    padding: 40px;
+}
+
 .menu {
     height: 100px;
     line-height: 100px;
@@ -235,12 +246,41 @@ h3 {
     color: white;
 }
 
+.post-panel {
+    margin: 100px 50px 100px 50px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+}
+
 .hamburger {
     margin-right: 30px;
     float: right;
     font-size: 40px;
     line-height: 100px;
     display: none;
+}
+
+.reg {
+    background-color: rgb(151, 149, 149);
+    width: 400px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+}
+
+.login {
+    background-color: rgb(151, 149, 149);
+    width: 400px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
 }
 
 #link {

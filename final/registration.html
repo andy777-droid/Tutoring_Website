@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="design.css">
 </head>
 
-<body style="background-image: url(splash.jpg);">
+<body style="background-image: url(splash.jpg);background-size: cover;">
     <div class="main-info">
         <div class="header">
             <label class="hamburger" for="link">&#9776;</label>
@@ -24,7 +24,7 @@
                 </a>
                 <a href="post.html">Post  <i class="fas fa-user-plus"></i></a>
                 <a href="about.html">About  <i class="fas fa-question-circle"></i></a>
-                <a href=""><i class="fas fa-user"></i></a>
+                <a href="splash.html"><i class="fas fa-user"></i></a>
             </div>
             <div class="dropdown-content">
                 <a href="search.html"><i class="fas fa-search"></i> Search</a>
@@ -32,14 +32,80 @@
                 <a href="about.html"><i class="far fa-question-circle"></i> About</a>
             </div>
         </div>
+
+        <div class="panel">
+
+            <form class="reg" method="POST">
+
+                <h1>Registration</h1>
+
+                <br>
+                <label>First Name</label><br>
+                <input type="text" name="fname">
+                <br>
+
+                <br>
+                <label>Last Name</label><br>
+                <input type="text" name="lname">
+                <br>
+
+                <br>
+                <label>Email</label><br>
+                <input type="text" name="email">
+                <br>
+
+                <br>
+                <label>Contact</label><br>
+                <input type="text" name="cell">
+                <br>
+
+                <br>
+                <label>Username</label><br>
+                <input type="text" name="username">
+                <br>
+
+                <br>
+                <label>Password</label><br>
+                <input type="password" name="psw" id="idp">
+                <br>
+
+                <br>
+                <label>Confirm Password</label><br>
+                <input type="password" name="cpsw" id="idp2">
+                <br>
+
+                <br>
+                <label class="psw"><input type="checkbox" class="check" onclick="myFunction()"> Show Password</label>
+                <br>
+
+
+                <br>
+                <button type="submit" class="btn btn-primary btn-lg">Register</button>
+            </form>
+
+        </div>
     </div>
-
-
 
 
     <div class="footer"><a href="about.html #contact-division" class="footer-buttons-left">Contact Us</a><a href="about.html #terms-division" class="footer-buttons-left">T&C's</a>
         <i class="far fa-dot-circle"></i> Page Created By Andrew Hart - Cape Town - 2020 <i class="far fa-dot-circle"></i>
         <a href="about.html #faq-division" class="footer-buttons-right">FAQ</a><a href="about.html #social-division" class="footer-buttons-right">Social</a></div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("idp");
+            var y = document.getElementById("idp2");
+
+            if (x.type === "password" && y.type === "password") {
+                x.type = "text";
+                y.type = "text";
+
+            } else {
+                x.type = "password";
+                y.type = "password";
+            }
+        }
+    </script>
 </body>
 
 </html>
