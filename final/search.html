@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="design.css">
 </head>
 
-<body>
+<body style="background-image: url(splash.jpg); background-size: cover; background-attachment: fixed;">
     <div class="main-info">
         <div class="header">
             <label class="hamburger" for="link">&#9776;</label>
@@ -33,9 +33,77 @@
             </div>
         </div>
 
+
+        <div class="search-filter">
+            <form>
+                <div class="form-group">
+                    <select name="gender" id="gender" class="form-control">
+                        <option value="0">Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>                    
+                      </select>
+                </div>
+
+                <div class="form-group">
+                    <select name="suburb" id="suburb" class="form-control">
+                        <option value="0">Suburb</option>
+                        <option value="Bellville">Bellville</option>
+                        <option value="Blouberg">Blouberg</option>
+                        <option value="Brackenfell">Brackenfell</option>
+                        <option value="Cape Town">Cape Town</option>
+                        <option value="Ceres">Ceres</option>
+                        <option value="Constantia">Constantia</option>
+                        <option value="Durbanville">Durbanville</option>
+                        <option value="George">George</option> 
+                        <option value="Kraaifontein">Kraaifontein</option>
+                        <option value="Ladysmith">Ladysmith</option>
+                        <option value="Milnerton">Milnerton</option>   
+                        <option value="Paarl">Paarl</option>
+                        <option value="Stellenbosch">Stellenbosch</option>
+                        <option value="Swellendam">Swellendam</option>
+                        <option value="Table View">Table View</option>
+                        <option value="Robertson">Robertson</option>
+                        <option value="Worcester">Worcester</option>                
+                      </select>
+                </div>
+
+                <div class="form-group">
+                    <select name="experience" id="experience" class="form-control">
+                            <option value="0">Please select level of experience</option>
+                            <option value="none">None</option>
+                            <option value="0to1year">Between 0 and 1 years</option>
+                            <option value="1to3year">Between 1 and 3 years</option>
+                            <option value="3plusyear">More 3 years</option>                                                    
+                          </select>
+                </div>
+
+                <div class="form-group">
+                    <select name="owntransport" id="owntransport" class="form-control">
+                            <option value="0">Tutor transport</option>
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                          </select>
+                </div>
+
+                <div class="form-group">
+                    <select name="agerange" id="agerange" class="form-control">
+                            <option value="0">Please select age range</option>
+                            <option value="-3">0 - 3</option>
+                            <option value="-7">4 - 7</option>
+                            <option value="-11">8 - 11</option>
+                            <option value="-15">12 - 15</option>
+                            <option value="-19">16 - 19</option>
+                            <option value="-20">20 +</option>
+                          </select>
+                </div>
+
+                <div class="post-submit"><button type="submit" class="btn btn-primary btn-lg" id="post-submit">Search</button></div>
+
+            </form>
+        </div>
+
     </div>
-
-
 
     <div class="footer"><a href="about.html #contact-division" class="footer-buttons-left">Contact Us</a><a href="about.html #terms-division" class="footer-buttons-left">T&C's</a>
         <i class="far fa-dot-circle"></i> Page Created By Andrew Hart - Cape Town - 2020 <i class="far fa-dot-circle"></i>
