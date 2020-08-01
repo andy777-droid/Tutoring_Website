@@ -1,5 +1,5 @@
 function myFunction() {
-    var x = document.getElementById("idp");
+    var x = document.getElementById("psw");
 
     if (x.type === "password") {
         x.type = "text";
@@ -7,4 +7,4 @@ function myFunction() {
     } else {
         x.type = "password";
     }
-}
+};

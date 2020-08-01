@@ -20,11 +20,14 @@ if ($resultCheck > 0) {
     $rows = mysqli_fetch_assoc($result); 
     if (($rows['Username'] == $username) && ($rows['Passwords'] == $password)) {
         header("Location: http://localhost/tutoring_website/final/html/post.html"); 
-
-    }
-}else{
+    };
+}else{ 
   header("Location: http://localhost/tutoring_website/final/html/splash.html");  
-}
+};
+
+$conn->close();
+
+?>
 
 
 

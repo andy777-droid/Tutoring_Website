@@ -7,8 +7,7 @@
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="http://localhost/tutoring_website/final/icons/fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.css">
     <link rel="stylesheet" href="../css/design.css">
 </head>
 
@@ -24,7 +23,7 @@
                 </a>
                 <a href="splash.html">Post  <i class="fas fa-user-plus"></i></a>
                 <a href="about.html">About  <i class="fas fa-question-circle"></i></a>
-                <a href="splash.html"><i class="fas fa-user"></i></a>
+                <a href="splash.html"><i class="fas fa-user-times"></i></a>
             </div>
             <div class="dropdown-content">
                 <a href="search.html"><i class="fas fa-search"></i> Search</a>
@@ -34,7 +33,7 @@
         </div>
 
         <div class="panel">
-            <form class="login" action="../php/login.php" method="POST">
+            <form class="login" action="http://localhost/tutoring_website/final/php/login.php" method="POST">
                 <h1>Login</h1>
                 <br>
                 <label class="labels-input">Username</label><br>
@@ -48,16 +47,14 @@
 
                 <br>
                 <label class="labels-input"><input type="checkbox" class="check" onclick="myFunction()"> Show Password</label>
+                <script src="../js/password-toggle-login.js"></script>
                 <br>
-
 
                 <br>
                 <button type="submit" class="btn btn-primary btn-lg">Login</button>
             </form>
         </div>
     </div>
-
-
 
 
     <div class="footer"><a href="about.html #contact-division" class="footer-buttons-left">Contact Us</a><a href="about.html #terms-division" class="footer-buttons-left">T&C's</a>
