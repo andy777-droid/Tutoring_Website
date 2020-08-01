@@ -33,44 +33,38 @@
         </div>
 
         <div class="panel">
-
-            <form class="reg" action="http://localhost/tutoring_website/final/php/register.php" method="POST">
+            <form class="reg" name="reg" action="http://localhost/Tutoring_Website/final/php/register.php" onsubmit="return validateForm()" method="POST">
 
                 <h1>Registration</h1>
 
                 <br>
                 <label class="labels-input">First Name</label><br>
-                <input type="text" name="fname" class="form-control">
+                <input type="text" name="fname" id="fname" class="form-control">
                 <br>
 
                 <br>
                 <label class="labels-input">Last Name</label><br>
-                <input type="text" name="lname" class="form-control">
+                <input type="text" name="lname" id="lname" class="form-control">
                 <br>
 
                 <br>
                 <label class="labels-input">Email</label><br>
-                <input type="text" name="email" class="form-control">
+                <input type="text" name="email" id="email" class="form-control">
                 <br>
 
                 <br>
                 <label class="labels-input">Contact</label><br>
-                <input type="text" name="cell" class="form-control">
-                <br>
-
-                <br>
-                <label class="labels-input">Username</label><br>
-                <input type="text" name="username" class="form-control">
+                <input type="text" name="cell" id="cell" class="form-control">
                 <br>
 
                 <br>
                 <label class="labels-input">Password</label><br>
-                <input type="password" name="psw" id="idp" class="form-control">
+                <input type="password" name="idp" id="idp" class="form-control">
                 <br>
 
                 <br>
                 <label class="labels-input">Confirm Password</label><br>
-                <input type="password" name="cpsw" id="idp2" class="form-control">
+                <input type="password" name="idp2" id="idp2" class="form-control">
                 <br>
 
                 <br>
@@ -84,6 +78,7 @@
 
         </div>
         <script src="../js/password-toggle-register.js"></script>
+        <script src="../js/register-validation.js"></script>
     </div>
 
 

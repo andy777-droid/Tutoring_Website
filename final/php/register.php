@@ -4,9 +4,8 @@
   $lname = $_POST['lname'];
   $email = $_POST['email'];
   $contact = $_POST['cell'];
-  $username = $_POST['username'];
-  $psw = $_POST['psw'];
-  $cpsw = $_POST['cpsw'];
+  $psw = $_POST['idp'];
+  $cpsw = $_POST['idp2'];
 
   $host = "localhost";
   $user = "root";
@@ -17,11 +16,12 @@
   // Create connection
   $conn = new mysqli($host, $user, $pass, $db) or die("Unable to connect to database " + $db);
 
-  echo "Connected!!!";
-
-  $insert = "INSERT INTO user_login (Email, Username, FirstName, LastName, Contacts, Passwords) VALUES ('$email', '$username', '$fname', '$lname', '$contact', '$psw')";
+  $insert = "INSERT INTO user_login (Email, FirstName, LastName, Contacts, Passwords) VALUES ('$email', '$fname', '$lname', '$contact', '$psw')";
   $stmt = $conn->prepare($insert);
   $stmt->execute();
   $conn->close();
+  header("Location: http://localhost/tutoring_website/final/html/splash.html"); 
+
+  
   ?>  
 
