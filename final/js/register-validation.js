@@ -93,7 +93,6 @@ function validateForm() {
 
     }
 
-    alert("User registered successfully!");
     return true;
 
 }

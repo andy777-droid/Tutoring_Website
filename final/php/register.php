@@ -18,12 +18,16 @@
   // Create connection
   $conn = new mysqli($host, $user, $pass, $db) or die("Unable to connect to database " + $db);
 
-  $insert = "INSERT INTO user_login (Email, FirstName, LastName, Contacts, Gender, DateOfBirth, Passwords) VALUES ('$email', '$fname', '$lname', '$contact', '$gender', '$dob','$psw')";
-  $stmt = $conn->prepare($insert);
-  $stmt->execute();
+  $result = mysqli_query($conn, "select * from user_login where Email = '$email'");
+  $rows = mysqli_num_rows($result);
+  if ($rows > 0) {
+    header("Location: http://localhost/tutoring_website/final/html/registration.html");
+  } else {
+    $insert = "INSERT INTO user_login (Email, FirstName, LastName, Contacts, Gender, DateOfBirth, Passwords) VALUES ('$email', '$fname', '$lname', '$contact', '$gender', '$dob','$psw')";
+    $stmt = $conn->prepare($insert);
+    $stmt->execute();
+    header("Location: http://localhost/tutoring_website/final/html/splash.html");
+  };
   $conn->close();
-  header("Location: http://localhost/tutoring_website/final/html/splash.html"); 
-
-  
   ?>  
 
