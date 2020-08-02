@@ -26,3 +26,5 @@ if ($resultCheck > 0) {
 };
 
 $conn->close();
+
+?>
