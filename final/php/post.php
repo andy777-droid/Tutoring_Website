@@ -1,5 +1,4 @@
 <?php
-//// echo '<script type="text/javascript">alert("hello!");</script>';
 
 $suburb = $_POST['suburb'];
 $subjects = $_POST['subjects'];
