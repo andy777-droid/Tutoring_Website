@@ -32,6 +32,16 @@
             </div>
         </div>
 
+
+        <div class="user-info">
+            Welcome
+            <?php
+            if($_GET){
+                echo $_GET['user'];       
+            }
+            ?>
+                !
+        </div>
         <div class="post-panel">
             <form name="post" action="../php/post.php" onsubmit="return validateForm()">
                 <div class="form-title">Please ensure that all field are completed before submitting</div>
@@ -136,6 +146,7 @@
                 <div class="post-submit"><button type="submit" class="btn btn-primary btn-lg" id="post-submit">Submit</button></div>
 
             </form>
+
         </div>
         <script src="../js/post-validation.js"></script>
     </div>
