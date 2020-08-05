@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <script src="../htdocs/Tutoring_Website/final/js/user.js"></script>
-    </body>
-
-</head>
-
-<body>
     <?php
 
     $host = "localhost";
@@ -29,8 +19,9 @@
     if ($resultCheck > 0) {
         $rows = mysqli_fetch_assoc($result);
         if (($rows['Email'] == $email) && ($rows['Passwords'] == $password)) {
-
-            header("Location: http://localhost/tutoring_website/final/html/post.html?user=".$email);
+            $name = $rows['FirstName'];
+            $surname = $rows['LastName'];
+            header("Location: http://localhost/tutoring_website/final/html/post.html?user=" . $email . "&name=" . $name . "&surname=" . $surname);
         }
     } else {
         header("Location: http://localhost/tutoring_website/final/html/login.html");
@@ -41,4 +32,3 @@
     ?>
 
 
-</html>

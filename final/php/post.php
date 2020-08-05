@@ -1,5 +1,6 @@
 <?php
 
+$email = $_POST['email'];
 $suburb = $_POST['suburb'];
 $subjects = $_POST['subjects'];
 $experience = $_POST['experience'];
@@ -23,11 +24,10 @@ $db = "tutoring_website";
 // Create connection
 $conn = new mysqli($host, $user, $pass, $db) or die("Unable to connect to database " + $db);
 
-$insert = "INSERT INTO tutor_post (Email, FirstName, LastName, Contacts, Gender, DateOfBirth, Passwords) VALUES ('$email', '$fname', '$lname', '$contact', '$gender', '$dob','$psw')";
+$insert = "INSERT INTO tutor_post (idtutor, User_Email, Subjects, Suburb, TutoringExperience, Qualification, PlaceOfEducation, YearComplete, OwnTransport, LessonPrice, Descriptions, Ageranges, DrivingRadius, Images) VALUES (null,'$email', '$suburb', '$subjects', '$experience', '$qualification', '$education','$complete', '$owntransport', '$price', '$bio', '$agerange', '$radius', '$profile')";
 $stmt = $conn->prepare($insert);
 $stmt->execute();
-echo '<script type="text/javascript">alert("Success!");</script>';
-header("Location: http://localhost/tutoring_website/final/html/splash.html");
+header("Location: http://localhost/tutoring_website/final/html/search.html");
 $conn->close();
 
 ?>  
