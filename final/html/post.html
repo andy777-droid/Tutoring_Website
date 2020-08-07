@@ -49,7 +49,7 @@
                     <div class="col-sm">
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="text" class="form-control" name="email" id="email" value="<?php if($_GET){ echo $_GET[ 'user']; }?>">
+                            <input type="text" class="form-control" name="email" id="email" value="<?php if($_GET){ echo $_GET['user'];}?>">
                         </div>
 
                         <div class="form-group">
@@ -100,8 +100,21 @@
                         </div>
                         <div class="form-group">
                             <label for="qualification">Qualification</label>
-                            <input type="text" class="form-control" name="qualification" id="qualification" placeholder="B.Sc. English">
-                        </div>
+                            <select name="qualification" id="qualification" class="form-control">
+                                <option >Please select your qualification</option>
+                                <option value="none">None</option>
+                                <option value="Bachelor's Degree">Bachelor's Degree</option>
+                                <option value="Honours Degree">Honours Degree</option>
+                                <option value="CFP">CFP</option>     
+                                <option value="Master's Degree">Master's Degree</option>      
+                                <option value="National Certificate">National Certificate</option>    
+                                <option value="Technikon Diploma">Technikon Diploma</option>                                                 
+                                <option value="B-Tech Degree">B-Tech Degree</option> 
+                                <option value="M-Tech Degree">M-Tech Degree</option>
+                                <option value="Diploma">Diploma</option>  
+                                <option value="Matric">Matric</option>                
+                             </select> </div>
+
                         <div class="form-group">
                             <label for="education">Place of education</label>
                             <input type="text" class="form-control" name="education" id="education" placeholder="Stellenbosch University">
@@ -141,7 +154,7 @@
                         </div>
                         <div class="form-group">
                             <label for="drivingrange">Driving radius</label>
-                            <input type="number" id="radius" name="radius" MIN="0" MAX="500" STEP="1" placeholder="R" class="form-control">
+                            <input type="number" id="radius" name="radius" MIN="0" MAX="500" STEP="1" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="imagefile">Upload profile picture</label>

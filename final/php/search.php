@@ -1,39 +1,76 @@
-    <?php
+    <html>
 
-    $host = "localhost";
-    $user = "root";
-    $pass = "";
-    $db = "tutoring_website";
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="The HTML5 Herald">
+        <meta name="author" content="SitePoint">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="http://localhost/tutoring_website/final/icons/fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.css">
+        <link rel="stylesheet" href="../css/design.css">
+    </head>
 
-    $conn = new mysqli($host, $user, $pass, $db);
+    <body style="background-image: url(../icons/splash.jpg); background-size: cover; background-attachment: fixed;">
+        <div class="main-info">
+            <div class="header">
+                <label class="hamburger" for="link">&#9776;</label>
+                <input type="checkbox" id="link">
+                <a href="../html/home.html"><img src="../icons/logo.png" class="logo"></a>
+                <div class="title">Western Cape Tutors</div>
+                <div class="menu">
+                    <a href="../html/search.html">Search <i class="fas fa-search"></i>
+                    </a>
+                    <a href="../html/splash.html">Post <i class="fas fa-user-plus"></i></a>
+                    <a href="../html/about.html">About <i class="fas fa-question-circle"></i></a>
+                    <a href="../html/splash.html"><i class="fas fa-user-times"></i></a>
+                </div>
+                <div class="dropdown-content">
+                    <a href="../html/search.html"><i class="fas fa-search"></i> Search</a>
+                    <a href="../html/post.html"><i class="fas fa-user-plus"></i> Post</a>
+                    <a href="../html/about.html"><i class="far fa-question-circle"></i> About</a>
+                </div>
+            </div>
+            <?php
 
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+            $host = "localhost";
+            $user = "root";
+            $pass = "";
+            $db = "tutoring_website";
 
-    $result = mysqli_query($conn, "select * from tutor_post") or die("Unable to read data");
-    $resultCheck = mysqli_num_rows($result);
+            $conn = new mysqli($host, $user, $pass, $db);
 
-    if ($resultCheck > 0) {
-        $rows = mysqli_fetch_assoc($result);
-        $email = $rows['User_Email'];
-        $suburb = $rows['Suburb'];
-        $subjects = $rows['Subjects'];
-        $experience = $rows['TutoringExperience'];
-        $qualification = $rows['Qualification'];
-        $education = $rows['PlaceOfEducation'];
-        $complete = $rows['YearComplete'];
-        $owntransport = $rows['OwnTransport'];
-        $price = $rows['LessonPrice'];
-        $bio = $rows['Descriptions'];
-        $agerange = $rows['Ageranges'];
-        $radius = $rows['DrivingRadius'];
-        $profile = $rows['Images'];
-    } else {
-    }
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
 
-    $conn->close();
+            $result = mysqli_query($conn, "select * from tutor_post, user_login where tutor_post.User_Email = user_login.Email") or die("Unable to read data");
+            $resultCheck = mysqli_num_rows($result);
 
-    ?>
+            if ($resultCheck > 0) {
+                while ($row = $result->fetch_assoc()) {
+            ?>
+                    <div class="card text-white bg-dark" id="tutor-card">
+                        <img class="tutor-img" src="../<?php echo $row['Images'] ?>" alt="Card image cap">
+                        <div class="tutor-body">
+                            <h5 class="tutor-name"><?php echo $row['FirstName'] . " " . $row['LastName'] ?></h5>
+                            <p class="tutor-subject">Lectures <?php echo $row['Subjects'] ?></p>
+                            <p class="tutor-price">R<?php echo $row['LessonPrice'] ?> / hr</p>
+                            <form action="../php/view.php" method="POST">
+                                <input name="id-record" type="text" value="<?php echo $row['idtutor'] ?>" style="display: none;">
+                                <button type="submit" class="btn btn-primary">View</button>
+                            </form>
+                        </div>
+                    </div>
+            <?php
+                }
+            } else {
+                echo "Error";
+            }
+            $conn->close();
+            ?>
+        </div>
+        <div class="footer"><a href="about.html #contact-division" class="footer-buttons-left">Contact Us</a><a href="about.html #terms-division" class="footer-buttons-left">T&C's</a>
+            <i class="far fa-dot-circle"></i> Page Created By Andrew Hart - Cape Town - 2020 <i class="far fa-dot-circle"></i>
+            <a href="about.html #faq-division" class="footer-buttons-right">FAQ</a><a href="about.html #social-division" class="footer-buttons-right">Social</a></div>
+    </body>
 
-
+    </html>
