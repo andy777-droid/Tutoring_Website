@@ -49,7 +49,7 @@
                 while ($row = $result->fetch_assoc()) {
             ?>
                     <div class="card text-white bg-dark" id="tutor-card">
-                        <img class="tutor-img" src="../<?php echo $row['Images'] ?>" alt="Card image cap">
+                        <img class="tutor-img" src="../images/<?php echo $row['Images'] ?>" alt="Card image cap">
                         <div class="tutor-body">
                             <h5 class="tutor-name"><?php echo $row['FirstName'] . " " . $row['LastName'] ?></h5>
                             <p class="tutor-subject">Lectures <?php echo $row['Subjects'] ?></p>

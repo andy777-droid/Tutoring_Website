@@ -440,6 +440,16 @@ h3 {
     font-weight: bold;
 }
 
+#bottom {
+    padding: 30px;
+    color: white;
+}
+
+.column-heading {
+    font-size: 20px;
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 900px) {
     .hamburger {
         display: block;

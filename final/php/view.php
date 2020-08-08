@@ -74,7 +74,7 @@
                 <div class="tutor-display">
                     <div class="row">
                         <div class="tutor-display-left">
-                            <img class="tutor-display-image" src="../<?php echo $row['Images'] ?>" alt="">
+                            <img class="tutor-display-image" src="../images/<?php echo $row['Images'] ?>" alt="">
                         </div>
                         <div class="tutor-display-right">
                             <div class="info">
@@ -86,16 +86,36 @@
                         </div>
                         <div class="info-2">
                             <label class="label-tutor-heading"><?php echo $row['Subjects'] ?> @ R <?php echo $row['LessonPrice'] ?> / hr</label><br>
-                            <label class="label-info">Gender : <?php echo $row['Gender'] ?></label><br>
+                            <label class="label-info">Location : <?php echo $row['Suburb'] ?></label><br>
                             <label class="label-info">Date Of Birth : <?php echo $row['DateOfBirth'] ?></label><br>
                         </div>
 
                     </div>
 
-                    <div class="row" style="background-color: gray; border-radius : 20px; padding : 30px; color : white;">
-                        eckwemvewc<br>
-                        wefcfewe<br>
-                        dcvdaev
+                    <div class="row" style="background-color :rgb(46, 46, 46); border-radius : 20px;">
+
+                        <div class="col-sm" id="bottom">
+                            <label class="column-heading">Description of tutor</label><br>
+                            <p><?php echo $row['Descriptions'] ?></p><br>
+                            <label class="column-heading">Preffered age categories</label><br>
+                            <p><?php echo $row['Ageranges'] ?> </p><br>
+                            <label class="column-heading">Transport status</label><br>
+                            <p><?php echo $row['OwnTransport'] ?></p>
+
+                        </div>
+                        <div class="col-sm" id="bottom">
+                            <label class="column-heading">Experience in teaching <?php echo $row['Subjects'] ?></label><br>
+                            <p><?php echo $row['TutoringExperience'] ?></p><br>
+                            <label class="column-heading">Qualification</label><br>
+                            <p><?php echo $row['Qualification'] ?></p><br>
+                            <label class="column-heading">Place where education took place</label><br>
+                            <p><?php echo $row['PlaceOfEducation'] ?></p><br>
+                            <label class="column-heading">Completed studies during</label><br>
+                            <p><?php echo $row['YearComplete'] ?></p><br>    
+                            <label class="column-heading">Driving radius</label>
+                            <p> <?php echo $row['DrivingRadius'] ?> km</p>
+
+                        </div>
                     </div>
                 </div>
 
