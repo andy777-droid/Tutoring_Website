@@ -73,10 +73,16 @@
                 <div class="col-sm">
                     <div class="card h-100" id="splash-card-2">
                         <div class="card-body" id="splash-text">
-                            <div class="card-title">Edit your profile</div>
+                            <div class="card-title">Want a new password?</div>
                         </div>
-                        <a href="" class="btn btn-primary btn-lg" id="splash-button">Edit</a>
+                        <form style="margin: 0; padding: 0;" action="../php/change-password.php" method="POST">
+                            <input type="text" name="email" id="email" style="display: none;" value="<?php
+                            if($_GET){
+                                echo $_GET['user'];       
+                            }
+                            ?>">
 
+                            <button type="submit" class="btn btn-primary btn-lg" id="splash-button" style="width: 80%;">Change</button>
                     </div>
                 </div>
 

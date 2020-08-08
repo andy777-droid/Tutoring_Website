@@ -289,6 +289,16 @@ h3 {
     height: 80px;
 }
 
+.change-password {
+    margin: 30px 150px 100px 150px;
+    background-color: white;
+    padding: 40px;
+}
+
+.update-button {
+    text-align: center;
+}
+
 .hamburger {
     margin-right: 30px;
     float: right;
@@ -472,5 +482,15 @@ h3 {
     }
     input[type=checkbox]:checked~.dropdown-content {
         display: block;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .main-info {
+        width: 100vw;
+        height: 100vh;
+    }
+    .header {
+        width: 100%;
     }
 }
