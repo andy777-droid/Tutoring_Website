@@ -42,7 +42,15 @@
                 die("Connection failed: " . $conn->connect_error);
             }
 
-            $result = mysqli_query($conn, "select * from tutor_post, user_login where tutor_post.User_Email = user_login.Email") or die("Unable to read data");
+            $gender = $_POST['gender'];
+            $suburb = $_POST['suburb'];
+            $subject = $_POST['subject'];
+            $transport = $_POST['owntransport'];
+            $age = $_POST['agerange'];
+
+
+            $result = mysqli_query($conn, "select * from tutor_post, user_login where tutor_post.User_Email = user_login.Email and user_login.Gender " . $gender . " and tutor_post.Suburb " . $suburb . " and tutor_post.Subjects " . $subject . " and tutor_post.OwnTransport " . $transport . " and tutor_post.Ageranges " . $age . "") or die("Unable to read data");
+
             $resultCheck = mysqli_num_rows($result);
 
             if ($resultCheck > 0) {
@@ -60,11 +68,22 @@
                             </form>
                         </div>
                     </div>
-            <?php
+                <?php
                 }
             } else {
-                echo "Error";
+
+                ?>
+                <div class="error-response">
+                    No records found!
+                </div>
+            <?php
             }
+
+
+
+
+
+
             $conn->close();
             ?>
         </div>

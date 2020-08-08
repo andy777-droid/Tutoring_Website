@@ -97,7 +97,7 @@
                         <div class="col-sm" id="bottom">
                             <label class="column-heading">Description of tutor</label><br>
                             <p><?php echo $row['Descriptions'] ?></p><br>
-                            <label class="column-heading">Preffered age categories</label><br>
+                            <label class="column-heading">Preferred age categories</label><br>
                             <p><?php echo $row['Ageranges'] ?> </p><br>
                             <label class="column-heading">Transport status</label><br>
                             <p><?php echo $row['OwnTransport'] ?></p>
