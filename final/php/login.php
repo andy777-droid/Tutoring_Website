@@ -21,7 +21,7 @@
         if (($rows['Email'] == $email) && ($rows['Passwords'] == $password)) {
             $name = $rows['FirstName'];
             $surname = $rows['LastName'];
-            header("Location: http://localhost/tutoring_website/final/html/post.html?user=" . $email . "&name=" . $name . "&surname=" . $surname);
+            header("Location: http://localhost/tutoring_website/final/html/login-dash.html?user=" . $email . "&name=" . $name . "&surname=" . $surname);
         }
     } else {
         header("Location: http://localhost/tutoring_website/final/html/login.html");
