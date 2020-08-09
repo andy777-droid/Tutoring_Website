@@ -1,6 +1,6 @@
 body {
     background-color: #FFFFFF;
-    min-width: 100vh;
+    min-width: 100vw;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -16,6 +16,7 @@ body {
     height: 100px;
     line-height: 100px;
     color: white;
+    width: 100%;
 }
 
 .footer {
@@ -24,6 +25,24 @@ body {
     line-height: 70px;
     text-align: center;
     color: white;
+}
+
+.small-footer {
+    background-color: #3f3e3e;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: white;
+    display: none;
+}
+
+.super-small-footer {
+    background-color: #3f3e3e;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: white;
+    display: none;
 }
 
 .logo {
@@ -39,6 +58,12 @@ body {
     float: left;
 }
 
+.small-title {
+    font-size: 30px;
+    float: left;
+    display: none;
+}
+
 .post-submit {
     text-align: center;
     margin: 30px;
@@ -48,6 +73,13 @@ body {
     text-align: center;
     font-size: 30px;
     padding: 40px;
+}
+
+.small-form-title {
+    text-align: center;
+    font-size: 30px;
+    padding: 40px;
+    display: none;
 }
 
 .menu {
@@ -73,6 +105,7 @@ body {
 
 .panel {
     margin-bottom: 100px;
+    padding: 20px;
 }
 
 .tutor-home-img {
@@ -87,6 +120,14 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 40px;
+}
+
+.center-bottom-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
 }
 
 .splash-text-primary {
@@ -104,20 +145,7 @@ body {
     margin-bottom: 10px;
 }
 
-.fa-color {
-    color: white;
-}
-
-.splash-text-tertiary {
-    font-size: 20px;
-    color: red;
-    text-align: center;
-    margin-bottom: 50px;
-}
-
 #splash-card-1 {
-    background-color: transparent;
-    width: fit-content;
     margin: 20px 20px 0 0;
     float: right;
     width: 200px;
@@ -126,8 +154,6 @@ body {
 }
 
 #splash-card-2 {
-    background-color: transparent;
-    width: fit-content;
     margin: 20px 0 0 20px;
     float: left;
     width: 200px;
@@ -142,14 +168,6 @@ body {
 #splash-text {
     color: white;
     font-size: 20px;
-}
-
-.center-bottom-text {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 25px;
 }
 
 .card-img-top {
@@ -309,7 +327,7 @@ h3 {
 
 .reg {
     background-color: rgb(151, 149, 149);
-    width: 400px;
+    width: 40%;
     text-align: center;
     padding: 50px;
     border-radius: 25px;
@@ -320,7 +338,7 @@ h3 {
 
 .login {
     background-color: rgb(151, 149, 149);
-    width: 400px;
+    width: 40%;
     text-align: center;
     padding: 50px;
     border-radius: 25px;
@@ -350,7 +368,7 @@ h3 {
     line-height: 70px;
     text-decoration: none;
     display: block;
-    font-size: 25px;
+    font-size: 22px;
     border-radius: 0px;
     border-left: none;
     border-right: none;
@@ -358,7 +376,7 @@ h3 {
     width: 100%;
     margin: 0;
     padding-left: 30px;
-    text-align: left;
+    text-align: center;
 }
 
 .dropdown-content a:hover {
@@ -483,14 +501,70 @@ h3 {
     input[type=checkbox]:checked~.dropdown-content {
         display: block;
     }
+    .footer {
+        display: none;
+    }
+    .small-footer {
+        display: block;
+    }
+    .login,
+    .reg {
+        width: 60%
+    }
 }
 
-@media only screen and (max-width: 380px) {
-    .main-info {
-        width: 100vw;
-        height: 100vh;
+@media only screen and (max-width: 500px) {
+    .title {
+        display: none;
     }
-    .header {
+    .small-title {
+        display: block;
+    }
+    .center-text {
+        font-size: 25px;
+        top: 40%;
+        text-align: center;
+    }
+    .center-bottom-text {
+        font-size: 15px;
+        top: 46%;
+        text-align: center;
+    }
+    .form-title {
+        display: none;
+    }
+    .small-form-title {
+        display: block;
+    }
+    #reg-splash,
+    #log-splash {
+        margin-bottom: 30px;
+        text-align: center;
         width: 100%;
+        padding: 0px;
+    }
+    #splash-card-1,
+    #splash-card-2 {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+        float: none;
+    }
+    .login,
+    .reg {
+        width: 90%
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .small-footer {
+        display: none;
+    }
+    .super-small-footer {
+        display: block;
+    }
+    #tutor-card {
+        width: 90%;
     }
 }

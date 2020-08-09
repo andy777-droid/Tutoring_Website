@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
@@ -24,9 +25,9 @@
                 <a href="../html/splash.html"><i class="fas fa-user-times"></i></a>
             </div>
             <div class="dropdown-content">
-                <a href="../html/search.html"><i class="fas fa-search"></i> Search</a>
-                <a href="../html/post.html"><i class="fas fa-user-plus"></i> Post</a>
-                <a href="../html/about.html"><i class="far fa-question-circle"></i> About</a>
+                <a href="search.html">Search</a>
+                <a href="splash.html">Post</a>
+                <a href="about.html">About</a>
             </div>
         </div>
         <?php
@@ -111,7 +112,7 @@
                             <label class="column-heading">Place where education took place</label><br>
                             <p><?php echo $row['PlaceOfEducation'] ?></p><br>
                             <label class="column-heading">Completed studies during</label><br>
-                            <p><?php echo $row['YearComplete'] ?></p><br>    
+                            <p><?php echo $row['YearComplete'] ?></p><br>
                             <label class="column-heading">Driving radius</label>
                             <p> <?php echo $row['DrivingRadius'] ?> km</p>
 
@@ -129,9 +130,21 @@
 
         ?>
     </div>
-    <div class="footer"><a href="about.html #contact-division" class="footer-buttons-left">Contact Us</a><a href="about.html #terms-division" class="footer-buttons-left">T&C's</a>
+    <div class="footer">
+        <a href="about.html #contact-division" class="footer-buttons-left">Contact Us</a><a href="about.html #terms-division" class="footer-buttons-left">T&C's</a>
         <i class="far fa-dot-circle"></i> Page Created By Andrew Hart - Cape Town - 2020 <i class="far fa-dot-circle"></i>
-        <a href="about.html #faq-division" class="footer-buttons-right">FAQ</a><a href="about.html #social-division" class="footer-buttons-right">Social</a></div>
+        <a href="about.html #faq-division" class="footer-buttons-right">FAQ</a><a href="about.html #social-division" class="footer-buttons-right">Social</a>
+
+    </div>
+
+    <div class="small-footer">
+        <i class="far fa-dot-circle"></i> Page Created By Andrew Hart - Cape Town - 2020 <i class="far fa-dot-circle"></i>
+
+    </div>
+
+    <div class="super-small-footer">
+        <i class="far fa-dot-circle"></i> Page Created By Andrew Hart <i class="far fa-dot-circle"></i>
+    </div>F
 </body>
 
 </html>
