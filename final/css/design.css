@@ -1,9 +1,10 @@
 body {
     background-color: #FFFFFF;
-    min-width: 100vw;
     display: flex;
     flex-direction: column;
+    font-family: 'Sniglet', cursive;
     min-height: 100vh;
+    min-width: 100vw;
     overflow-x: hidden;
 }
 
@@ -13,86 +14,86 @@ body {
 
 .header {
     background-color: #3f3e3e;
+    color: white;
     height: 100px;
     line-height: 100px;
-    color: white;
     width: 100%;
 }
 
 .footer {
     background-color: #3f3e3e;
+    color: white;
     height: 70px;
     line-height: 70px;
     text-align: center;
-    color: white;
 }
 
 .small-footer {
     background-color: #3f3e3e;
+    color: white;
+    display: none;
     height: 70px;
     line-height: 70px;
     text-align: center;
-    color: white;
-    display: none;
 }
 
 .super-small-footer {
     background-color: #3f3e3e;
+    color: white;
+    display: none;
     height: 70px;
     line-height: 70px;
     text-align: center;
-    color: white;
-    display: none;
 }
 
 .logo {
-    height: 100px;
-    width: 100px;
     float: left;
-    padding-top: 10px;
+    height: 100px;
     padding-bottom: 10px;
+    padding-top: 10px;
+    width: 100px;
 }
 
 .title {
-    font-size: 30px;
     float: left;
+    font-size: 30px;
 }
 
 .small-title {
-    font-size: 30px;
-    float: left;
     display: none;
+    float: left;
+    font-size: 30px;
 }
 
 .post-submit {
-    text-align: center;
     margin: 30px;
+    text-align: center;
 }
 
 .form-title {
-    text-align: center;
     font-size: 30px;
     padding: 40px;
+    text-align: center;
 }
 
 .small-form-title {
-    text-align: center;
+    display: none;
     font-size: 30px;
     padding: 40px;
-    display: none;
+    text-align: center;
 }
 
 .menu {
+    float: right;
     height: 100px;
     line-height: 100px;
-    float: right;
 }
 
 .menu a {
-    margin-right: 26px;
-    text-decoration: none;
     color: white;
     font-size: 18px;
+    margin-right: 26px;
+    text-decoration: none;
 }
 
 .labels-input {
@@ -109,56 +110,56 @@ body {
 }
 
 .tutor-home-img {
-    width: 100%;
     opacity: 0.7;
     position: relative;
+    width: 100%;
 }
 
 .center-text {
+    font-size: 40px;
+    left: 50%;
     position: absolute;
     top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
 }
 
 .center-bottom-text {
+    font-size: 25px;
+    left: 50%;
     position: absolute;
     top: 60%;
-    left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 25px;
 }
 
 .splash-text-primary {
-    font-size: 40px;
     color: black;
-    text-align: center;
-    margin-top: 50px;
+    font-size: 40px;
     margin-bottom: 10px;
+    margin-top: 50px;
+    text-align: center;
 }
 
 .splash-text-secondary {
-    font-size: 30px;
     color: black;
-    text-align: center;
+    font-size: 30px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 #splash-card-1 {
-    margin: 20px 20px 0 0;
-    float: right;
-    width: 200px;
-    border-radius: 20px;
     background-color: rgb(151, 149, 149);
+    border-radius: 20px;
+    float: right;
+    margin: 20px 20px 0 0;
+    width: 200px;
 }
 
 #splash-card-2 {
-    margin: 20px 0 0 20px;
-    float: left;
-    width: 200px;
-    border-radius: 20px;
     background-color: rgb(151, 149, 149);
+    border-radius: 20px;
+    float: left;
+    margin: 20px 0 0 20px;
+    width: 200px;
 }
 
 #splash-button {
@@ -171,71 +172,73 @@ body {
 }
 
 .card-img-top {
-    width: 200px;
+    float: none;
     height: 200px;
     margin: 0 auto;
-    float: none;
+    width: 200px;
 }
 
 .card-body {
-    text-align: center;
-    margin-top: 60px;
     margin-bottom: 20px;
+    margin-top: 60px;
+    text-align: center;
 }
 
 #home-search-left-card {
-    padding: 30px;
     margin: 20px;
+    padding: 30px;
 }
 
 #home-search-right-card {
-    padding: 30px;
     margin: 20px;
+    padding: 30px;
 }
 
 #home-post-left-card {
-    padding: 30px;
     margin: 20px;
+    padding: 30px;
 }
 
 #home-post-right-card {
-    padding: 30px;
     margin: 20px;
+    padding: 30px;
 }
 
 .search-description {
     font-size: 15px;
-    margin-top: 30px;
+    font-weight: bold;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .follow-link {
-    text-decoration: none;
     color: rgb(55, 55, 226);
     font-size: 18px;
+    text-decoration: none;
 }
 
 .card-title {
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
 .test {
-    width: 200px;
     height: 200px;
+    width: 200px;
 }
 
 .cards {
+    background-color: #f1f1f1;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 30px;
     padding: 16px;
     text-align: center;
-    background-color: #f1f1f1;
-    margin: 30px;
 }
 
 .categories-title {
     font-size: 50px;
-    text-align: center;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 #about-cards {
@@ -263,39 +266,39 @@ h3 {
 }
 
 .contacts:hover {
-    text-decoration: underline;
     color: blue;
+    text-decoration: underline;
 }
 
 .footer-buttons-left {
-    text-decoration: none;
     color: white;
     margin-right: 50px;
+    text-decoration: none;
 }
 
 .footer-buttons-left:hover {
+    color: white;
     font-weight: bold;
     text-decoration: none;
-    color: white;
 }
 
 .footer-buttons-right {
-    text-decoration: none;
     color: white;
     margin-left: 50px;
+    text-decoration: none;
 }
 
 .footer-buttons-right:hover {
+    color: white;
     font-weight: bold;
     text-decoration: none;
-    color: white;
 }
 
 .post-panel {
-    margin: 0px 50px 100px 50px;
-    padding: 30px;
     background-color: white;
     border-radius: 20px;
+    margin: 0px 50px 100px 50px;
+    padding: 30px;
 }
 
 .search-filter {
@@ -303,13 +306,13 @@ h3 {
 }
 
 .subject-images {
-    width: 80px;
     height: 80px;
+    width: 80px;
 }
 
 .change-password {
-    margin: 30px 150px 100px 150px;
     background-color: white;
+    margin: 30px 150px 100px 150px;
     padding: 40px;
 }
 
@@ -318,34 +321,34 @@ h3 {
 }
 
 .hamburger {
-    margin-right: 30px;
+    display: none;
     float: right;
     font-size: 40px;
     line-height: 100px;
-    display: none;
+    margin-right: 30px;
 }
 
 .reg {
     background-color: rgb(151, 149, 149);
-    width: 40%;
-    text-align: center;
-    padding: 50px;
     border-radius: 25px;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
     margin-top: 100px;
+    padding: 50px;
+    text-align: center;
+    width: 40%;
 }
 
 .login {
     background-color: rgb(151, 149, 149);
-    width: 40%;
-    text-align: center;
-    padding: 50px;
     border-radius: 25px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 100px;
     color: rgb(34, 34, 34);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding: 50px;
+    text-align: center;
+    width: 40%;
 }
 
 #link {
@@ -353,69 +356,69 @@ h3 {
 }
 
 .dropdown-content {
+    background-color: white;
+    display: none;
+    position: absolute;
     right: 60px;
     top: 48px;
     width: 80%;
-    display: none;
-    background-color: white;
-    position: absolute;
     z-index: 1;
 }
 
 .dropdown-content a {
+    border-bottom: none;
+    border-left: none;
+    border-radius: 0px;
+    border-right: none;
     color: black;
-    height: 70px;
-    line-height: 70px;
-    text-decoration: none;
     display: block;
     font-size: 22px;
-    border-radius: 0px;
-    border-left: none;
-    border-right: none;
-    border-bottom: none;
-    width: 100%;
+    height: 70px;
+    line-height: 70px;
     margin: 0;
     padding-left: 30px;
     text-align: center;
+    text-decoration: none;
+    width: 100%;
 }
 
 .dropdown-content a:hover {
-    color: white;
     background-color: #1E90FF;
+    color: white;
 }
 
 .splash-img {
-    width: 100vw;
     height: 100vh;
     position: relative;
+    width: 100vw;
 }
 
 .user-info {
     color: black;
     font-size: 30px;
-    text-align: center;
     margin: 30px 0 30px 0;
+    text-align: center;
 }
 
 .tutor-img {
     border-radius: 50%;
-    width: 100%;
     height: 300px;
     padding: 20px;
     text-align: center;
+    width: 100%;
 }
 
 #tutor-card {
-    width: 18rem;
+    border-radius: 20px;
     display: inline-block;
     height: 500px;
     margin: 20px;
-    border-radius: 20px;
+    width: 18rem;
 }
 
 .tutor-body {
-    text-align: center;
     margin: 20px;
+    text-align: center;
 }
 
 .tutor-price {
@@ -428,16 +431,16 @@ h3 {
 }
 
 .tutor-display {
-    margin: 40px;
     background-color: white;
+    margin: 40px;
     padding: 30px;
 }
 
 .tutor-display-image {
-    width: 200px;
-    height: 200px;
     border-radius: 50%;
+    height: 200px;
     margin: 10px;
+    width: 200px;
 }
 
 .tutor-display-left {
@@ -458,9 +461,9 @@ h3 {
 }
 
 .label-tutor-cell {
+    color: rgb(95, 95, 95);
     font-size: 18px;
     font-weight: bold;
-    color: rgb(95, 95, 95);
 }
 
 .label-info {
@@ -469,8 +472,8 @@ h3 {
 }
 
 #bottom {
-    padding: 30px;
     color: white;
+    padding: 30px;
 }
 
 .column-heading {
@@ -479,21 +482,21 @@ h3 {
 }
 
 .error-response {
-    text-align: center;
+    background-color: rgb(68, 68, 68);
+    border-radius: 20px;
+    color: white;
     font-size: 40px;
     font-weight: bold;
-    background-color: rgb(68, 68, 68);
-    color: white;
-    width: fit-content;
-    padding: 30px;
-    border-radius: 20px;
     margin: 100px auto 0px auto;
+    padding: 30px;
+    text-align: center;
+    width: fit-content;
 }
 
 @media only screen and (max-width: 900px) {
     .hamburger {
-        display: block;
         cursor: pointer;
+        display: block;
     }
     .menu {
         display: none;
@@ -522,13 +525,13 @@ h3 {
     }
     .center-text {
         font-size: 25px;
-        top: 40%;
         text-align: center;
+        top: 35%;
     }
     .center-bottom-text {
         font-size: 15px;
-        top: 46%;
         text-align: center;
+        top: 45%;
     }
     .form-title {
         display: none;
@@ -539,17 +542,17 @@ h3 {
     #reg-splash,
     #log-splash {
         margin-bottom: 30px;
+        padding: 0px;
         text-align: center;
         width: 100%;
-        padding: 0px;
     }
     #splash-card-1,
     #splash-card-2 {
-        width: 80%;
+        float: none;
         margin-left: auto;
         margin-right: auto;
         padding: 0px;
-        float: none;
+        width: 80%;
     }
     .login,
     .reg {

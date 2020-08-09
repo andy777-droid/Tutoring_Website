@@ -17,6 +17,7 @@
             <input type="checkbox" id="link">
             <a href="../html/home.html"><img src="../icons/logo.png" class="logo"></a>
             <div class="title">Western Cape Tutors</div>
+            <div class="small-title">WCT</div>
             <div class="menu">
                 <a href="../html/search.html">Search <i class="fas fa-search"></i>
                 </a>
@@ -25,9 +26,9 @@
                 <a href="../html/splash.html"><i class="fas fa-user-times"></i></a>
             </div>
             <div class="dropdown-content">
-                <a href="search.html">Search</a>
-                <a href="splash.html">Post</a>
-                <a href="about.html">About</a>
+                <a href="../html/search.html">Search</a>
+                <a href="../html/splash.html">Post</a>
+                <a href="../html/about.html">About</a>
             </div>
         </div>
         <?php
@@ -49,27 +50,6 @@
 
         if ($resultCheck > 0) {
             while ($row = $result->fetch_assoc()) {
-
-                $user_email = $row['User_Email'];
-                $suburb = $row['Suburb'];
-                $subject = $row['Subjects'];
-                $experience = $row['TutoringExperience'];
-                $qualification = $row['Qualification'];
-                $place = $row['PlaceOfEducation'];
-                $complete = $row['YearComplete'];
-                $transport = $row['OwnTransport'];
-                $price = $row['LessonPrice'];
-                $bio = $row['Descriptions'];
-                $ages = $row['Ageranges'];
-                $radius = $row['DrivingRadius'];
-                $img = $row['Images'];
-
-                $fname = $row['FirstName'];
-                $lname = $row['LastName'];
-                $contact = $row['Contact'];
-                $gender = $row['Gender'];
-                $date = $row['DateOfBirth'];
-
         ?>
 
                 <div class="tutor-display">
@@ -144,7 +124,7 @@
 
     <div class="super-small-footer">
         <i class="far fa-dot-circle"></i> Page Created By Andrew Hart <i class="far fa-dot-circle"></i>
-    </div>F
+    </div>
 </body>
 
 </html>

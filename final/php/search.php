@@ -17,6 +17,7 @@
                 <input type="checkbox" id="link">
                 <a href="../html/home.html"><img src="../icons/logo.png" class="logo"></a>
                 <div class="title">Western Cape Tutors</div>
+                <div class="small-title">WCT</div>
                 <div class="menu">
                     <a href="../html/search.html">Search <i class="fas fa-search"></i>
                     </a>
@@ -25,9 +26,9 @@
                     <a href="../html/splash.html"><i class="fas fa-user-times"></i></a>
                 </div>
                 <div class="dropdown-content">
-                    <a href="search.html">Search</a>
-                    <a href="splash.html">Post</a>
-                    <a href="about.html">About</a>
+                    <a href="../html/search.html">Search</a>
+                    <a href="../html/splash.html">Post</a>
+                    <a href="../html/about.html">About</a>
                 </div>
             </div>
             <?php
