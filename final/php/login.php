@@ -24,11 +24,10 @@
             header("Location: http://localhost/tutoring_website/final/html/login-dash.html?user=" . $email . "&name=" . $name . "&surname=" . $surname);
         }
     } else {
+
         header("Location: http://localhost/tutoring_website/final/html/login.html");
     };
 
     $conn->close();
 
     ?>
-
-

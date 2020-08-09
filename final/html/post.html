@@ -88,14 +88,14 @@
                                 <option value="Physics">Physics</option>   
                                 <option value="Biology">Biology</option>  
                                 <option value="Accounting">Accounting</option>    
-                                <option value="Information Technology">Information Technology</option> 
+                                <option value="Information Tech.">Information Technology</option> 
                                 <option value="Business">Business Management</option> 
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="experience">Tutoring experience</label>
-                            <select name="experience" id="experience" class="form-control">
-                                <option >Please select level of experience</option>
+                            <select name="experience" id="experience" class="form-control" required>
+                                <option value="null">Please select level of experience</option>
                                 <option value="none">None</option>
                                 <option value="0 to 1 years">Between 0 and 1 years</option>
                                 <option value="1 to 3 years">Between 1 and 3 years</option>
@@ -104,8 +104,8 @@
                         </div>
                         <div class="form-group">
                             <label for="qualification">Qualification</label>
-                            <select name="qualification" id="qualification" class="form-control">
-                                <option >Please select your qualification</option>
+                            <select name="qualification" id="qualification" class="form-control" required>
+                                <option value="null">Please select your qualification</option>
                                 <option value="none">None</option>
                                 <option value="Bachelors Degree">Bachelor's Degree</option>
                                 <option value="Honours Degree">Honours Degree</option>
@@ -121,7 +121,7 @@
 
                         <div class="form-group">
                             <label for="education">Place of education</label>
-                            <input type="text" class="form-control" name="education" id="education" placeholder="Stellenbosch University">
+                            <input type="text" class="form-control" name="education" id="education" placeholder="Stellenbosch University" required>
                         </div>
                         <div class="form-group">
                             <label for="yearcompleted">Year completed</label>
@@ -139,11 +139,11 @@
                         </div>
                         <div class="form-group">
                             <label for="price">Price per lesson</label>
-                            <input type="number" id="price" name="price" MIN="0" MAX="1000" STEP="1" placeholder="R" maxlength="4" class="form-control">
+                            <input type="number" id="price" name="price" MIN="0" MAX="1000" STEP="1" placeholder="R" maxlength="4" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label for="bio">Describe yourself in terms of a lecturer</label>
-                            <textarea id="bio" name="bio" rows="4" class="form-control"></textarea>
+                            <textarea id="bio" name="bio" rows="4" class="form-control" required></textarea>
                         </div>
                         <div class="form-group">
                             <label for="agerange">Preffered age ranges</label>
@@ -158,11 +158,11 @@
                         </div>
                         <div class="form-group">
                             <label for="drivingrange">Driving radius</label>
-                            <input type="number" id="radius" name="radius" MIN="0" MAX="500" STEP="1" class="form-control">
+                            <input type="number" id="radius" name="radius" MIN="0" MAX="500" STEP="1" class="form-control" placeholder="km" required>
                         </div>
                         <div class="form-group">
                             <label for="imagefile">Upload profile picture</label>
-                            <input type="file" id="profile" name="profile" class="form-control-file" id="imagefile">
+                            <input type="file" id="profile" name="profile" class="form-control-file" id="imagefile" required>
                         </div>
                     </div>
                 </div>
