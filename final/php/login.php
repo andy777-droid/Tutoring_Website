@@ -11,7 +11,7 @@
         die("Connection failed: " . $conn->connect_error);
     }
     $email = $_POST['email'];
-    $password = $_POST['psw'];
+    $password = md5($_POST['psw']);
 
     $result = mysqli_query($conn, "select * from user_login where Email = '" . $email . "' and Passwords = '" . $password . "'") or die("Unable to read data");
     $resultCheck = mysqli_num_rows($result);
