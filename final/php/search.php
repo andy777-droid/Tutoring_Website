@@ -84,9 +84,9 @@
             ?>
         </div>
         <div class="footer">
-            <a href="about.html #contact-division" class="footer-buttons-left">Contact Us</a><a href="about.html #terms-division" class="footer-buttons-left">T&C's</a>
+            <a href="../html/about.html #contact-division" class="footer-buttons-left">Contact Us</a><a href="../html/about.html #terms-division" class="footer-buttons-left">T&C's</a>
             <i class="far fa-dot-circle"></i> Page Created By Andrew Hart - Cape Town - 2020 <i class="far fa-dot-circle"></i>
-            <a href="about.html #faq-division" class="footer-buttons-right">FAQ</a><a href="about.html #social-division" class="footer-buttons-right">Social</a>
+            <a href="../html/about.html #faq-division" class="footer-buttons-right">FAQ</a><a href="../html/about.html #social-division" class="footer-buttons-right">Social</a>
 
         </div>
 
