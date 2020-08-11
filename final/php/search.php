@@ -5,8 +5,10 @@
         <meta charset="utf-8">
         <meta name="description" content="The HTML5 Herald">
         <meta name="author" content="SitePoint">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="http://localhost/tutoring_website/final/icons/fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="http://localhost/tutoring_website/final/icons/fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.css">
         <link rel="stylesheet" href="../css/design.css">
     </head>
 
@@ -58,40 +60,45 @@
             if ($resultCheck > 0) {
                 while ($row = $result->fetch_assoc()) {
             ?>
-                    <div class="card text-white bg-dark" id="tutor-card">
-                        <img class="tutor-img" src="../images/<?php echo $row['Images'] ?>" alt="Card image cap">
-                        <div class="tutor-body">
-                            <h5 class="tutor-name"><?php echo $row['FirstName'] . " " . $row['LastName'] ?></h5>
-                            <p class="tutor-subject">Lectures <?php echo $row['Subjects'] ?></p>
-                            <p class="tutor-price">R<?php echo $row['LessonPrice'] ?> / hr</p>
-                            <form action="../php/view.php" method="POST">
-                                <input name="id-record" type="text" value="<?php echo $row['idtutor'] ?>" style="display: none;">
-                                <button type="submit" class="btn btn-primary">View</button>
-                            </form>
-                        </div>
-                    </div>
-                <?php
+            <div class="card text-white bg-dark" id="tutor-card">
+                <img class="tutor-img" src="../images/<?php echo $row['Images'] ?>" alt="Card image cap">
+                <div class="tutor-body">
+                    <h5 class="tutor-name"><?php echo $row['FirstName'] . " " . $row['LastName'] ?></h5>
+                    <p class="tutor-subject">Lectures <?php echo $row['Subjects'] ?></p>
+                    <p class="tutor-price">R<?php echo $row['LessonPrice'] ?> / hr</p>
+                    <form action="../php/view.php" method="POST">
+                        <input name="id-record" type="text" value="<?php echo $row['idtutor'] ?>"
+                            style="display: none;">
+                        <button type="submit" class="btn btn-primary">View</button>
+                    </form>
+                </div>
+            </div>
+            <?php
                 }
             } else {
 
                 ?>
-                <div class="error-response">
-                    No records found!
-                </div>
+            <div class="error-response">
+                No records found!
+            </div>
             <?php
             }
             $conn->close();
             ?>
         </div>
         <div class="footer">
-            <a href="../html/about.html #contact-division" class="footer-buttons-left">Contact Us</a><a href="../html/about.html #terms-division" class="footer-buttons-left">T&C's</a>
-            <i class="far fa-dot-circle"></i> Page Created By Andrew Hart - Cape Town - 2020 <i class="far fa-dot-circle"></i>
-            <a href="../html/about.html #faq-division" class="footer-buttons-right">FAQ</a><a href="../html/about.html #social-division" class="footer-buttons-right">Social</a>
+            <a href="../html/about.html #contact-division" class="footer-buttons-left">Contact Us</a><a
+                href="../html/about.html #terms-division" class="footer-buttons-left">T&C's</a>
+            <i class="far fa-dot-circle"></i> Page Created By Andrew Hart - Cape Town - 2020 <i
+                class="far fa-dot-circle"></i>
+            <a href="../html/about.html #faq-division" class="footer-buttons-right">FAQ</a><a
+                href="../html/about.html #social-division" class="footer-buttons-right">Social</a>
 
         </div>
 
         <div class="small-footer">
-            <i class="far fa-dot-circle"></i> Page Created By Andrew Hart - Cape Town - 2020 <i class="far fa-dot-circle"></i>
+            <i class="far fa-dot-circle"></i> Page Created By Andrew Hart - Cape Town - 2020 <i
+                class="far fa-dot-circle"></i>
 
         </div>
 

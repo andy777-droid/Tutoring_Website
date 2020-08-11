@@ -14,158 +14,171 @@
 </head>
 
 <body>
-    <div class="main-info">
-        <div class="header">
-            <label class="hamburger" for="link">&#9776;</label>
-            <input type="checkbox" id="link">
-            <a href="home.html"><img src="../icons/logo.png" class="logo"></a>
-            <div class="title">Western Cape Tutors</div>
-            <div class="small-title">WCT</div>
-            <div class="menu">
-                <a href="search.html">Search  <i class="fas fa-search"></i></a>
-                </a>
-                <a href="splash.html">Post  <i class="fas fa-user-plus"></i></a>
-                <a href="about.html">About  <i class="fas fa-question-circle"></i></a>
-                <a href="splash.html"><i class="fas fa-user-times"></i></a>
-            </div>
-            <div class="dropdown-content">
-                <a href="search.html">Search</a>
-                <a href="splash.html">Post</a>
-                <a href="about.html">About</a>
-            </div>
-        </div>
 
-        <div class="panel">
-            <img src="../icons/tutor.png" class="tutor-home-img">
-            <div class="center-text">Looking For The Perfect Tutor?</div>
-            <div class="center-bottom-text">Well, Here Is Your Solution</div>
+    <?php
+    if($_GET){
+        if($_GET['msg'] == 'success'){
+echo "<script>alert('Advertisement deleted succesfully')</script>";
+        }     
+        if($_GET['msg'] == 'failed'){
+            echo "<script>alert('Advertisement was not deleted')</script>";
+                    }    
+    }
+    ?>
 
-        </div>
 
-        <div class="panel">
-            <div class="row">
-                <div class="col-sm" id="home-search-left">
-                    <div class="card h-100" id="home-search-left-card">
-                        <img class="card-img-top" src="../icons/search.png" alt="Card image cap">
-                        <div class="card-body">
-                            <div class="card-title" style="font-weight: bold">Find The Perfect Tutor</div>
-                            <a href="search.html" class="btn btn-primary btn-lg">Search</a>
-                        </div>
-                    </div>
+        <div class="main-info">
+            <div class="header">
+                <label class="hamburger" for="link">&#9776;</label>
+                <input type="checkbox" id="link">
+                <a href="home.html"><img src="../icons/logo.png" class="logo"></a>
+                <div class="title">Western Cape Tutors</div>
+                <div class="small-title">WCT</div>
+                <div class="menu">
+                    <a href="search.html">Search  <i class="fas fa-search"></i></a>
+                    </a>
+                    <a href="splash.html">Post  <i class="fas fa-user-plus"></i></a>
+                    <a href="about.html">About  <i class="fas fa-question-circle"></i></a>
+                    <a href="splash.html"><i class="fas fa-user-times"></i></a>
                 </div>
+                <div class="dropdown-content">
+                    <a href="search.html">Search</a>
+                    <a href="splash.html">Post</a>
+                    <a href="about.html">About</a>
+                </div>
+            </div>
 
-                <div class="col-sm" id="home-search-right">
-                    <div class="card h-100" id="home-search-right-card">
-                        <div class="card-body">
-                            <div class="card-title" style="font-weight: bold">Search For A Tutor</div>
-                            <div class="search-description">If you wish to find the perfect tutor for your child, click the search button displayed to the left. Our search system allows you to filter all possible tutors according to your requirements. <br><br>These filters includes
-                                the location of the tutor, the subjects he/she has to offer, the level of experience, their minimum wages and many more. <br><br>If you are still not sure and would like us to assist in your matter, please follow the provided
-                                link for our contact details.
+            <div class="panel">
+                <img src="../icons/tutor.png" class="tutor-home-img">
+                <div class="center-text">Looking For The Perfect Tutor?</div>
+                <div class="center-bottom-text">Well, Here Is Your Solution</div>
+
+            </div>
+
+            <div class="panel">
+                <div class="row">
+                    <div class="col-sm" id="home-search-left">
+                        <div class="card h-100" id="home-search-left-card">
+                            <img class="card-img-top" src="../icons/search.png" alt="Card image cap">
+                            <div class="card-body">
+                                <div class="card-title" style="font-weight: bold">Find The Perfect Tutor</div>
+                                <a href="search.html" class="btn btn-primary btn-lg">Search</a>
                             </div>
-                            <a href="about.html #contact-division" class="follow-link">Click Here</a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="panel">
-            <div class="categories-title"><i class="fas fa-cubes"></i> We Have The Following Subjects To Offer <i class="fas fa-cubes"></i></div>
-
-            <div class="row">
-                <div class="col-sm">
-                    <div class="cards h-90">
-                        <h3>Mathematics</h3>
-                        <i class="fas fa-calculator fa-5x"></i>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="cards h-90">
-                        <h3>English</h3>
-                        <i class="fab fa-etsy fa-5x"></i>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="cards h-90">
-                        <h3>Afrikaans</h3>
-                        <i class="fas fa-book fa-5x"></i> </div>
-                </div>
-                <div class="col-sm">
-                    <div class="cards h-90">
-                        <h3>Physics</h3>
-                        <i class="fas fa-atom fa-5x"></i> </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-sm">
-                    <div class="cards h-90">
-                        <h3>Biology</h3>
-                        <i class="fas fa-seedling fa-5x"></i> </div>
-                </div>
-                <div class="col-sm">
-                    <div class="cards h-90">
-                        <h3>Accounting</h3>
-                        <i class="fas fa-money-bill-wave fa-5x"></i> </div>
-                </div>
-                <div class="col-sm">
-                    <div class="cards h-90">
-                        <h3>IT</h3>
-                        <i class="fas fa-desktop fa-5x"></i> </div>
-                </div>
-                <div class="col-sm">
-                    <div class="cards h-90">
-                        <h3>Business</h3>
-                        <i class="fas fa-piggy-bank fa-5x"></i> </div>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="panel">
-            <div class="row">
-                <div class="col-sm" id="home-post-left">
-                    <div class="card h-100" id="home-post-left-card">
-                        <div class="card-body">
-                            <div class="card-title">Make Your Advertisement</div>
-                            <div class="search-description">
-                                This is the place where you could use your knowledge to teach those who needs education. All you have to do is login, fill in tutor related information related to yourself, and post.<br><br> It is as simple as that.<br><br>                                Not sure if you have what it takes, please follow this link below and contact us
+                    <div class="col-sm" id="home-search-right">
+                        <div class="card h-100" id="home-search-right-card">
+                            <div class="card-body">
+                                <div class="card-title" style="font-weight: bold">Search For A Tutor</div>
+                                <div class="search-description">If you wish to find the perfect tutor for your child, click the search button displayed to the left. Our search system allows you to filter all possible tutors according to your requirements. <br><br>These filters includes
+                                    the location of the tutor, the subjects he/she has to offer, the level of experience, their minimum wages and many more. <br><br>If you are still not sure and would like us to assist in your matter, please follow the
+                                    provided link for our contact details.
+                                </div>
+                                <a href="about.html #contact-division" class="follow-link">Click Here</a>
                             </div>
-                            <a href="about.html #contact-division" class="follow-link">Click Here</a>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm" id="home-post-right">
-                    <div class="card h-100" id="home-post-right-card">
-                        <img class="card-img-top" src="../icons/post.png" alt="Card image cap">
-                        <div class="card-body">
-                            <div class="card-title">Want To Be A Tutor?</div>
-                            <a href="splash.html" class="btn btn-primary btn-lg">Post</a>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="panel">
+                <div class="categories-title"><i class="fas fa-cubes"></i> We Have The Following Subjects To Offer <i class="fas fa-cubes"></i></div>
+
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="cards h-90">
+                            <h3>Mathematics</h3>
+                            <i class="fas fa-calculator fa-5x"></i>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="cards h-90">
+                            <h3>English</h3>
+                            <i class="fab fa-etsy fa-5x"></i>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="cards h-90">
+                            <h3>Afrikaans</h3>
+                            <i class="fas fa-book fa-5x"></i> </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="cards h-90">
+                            <h3>Physics</h3>
+                            <i class="fas fa-atom fa-5x"></i> </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="cards h-90">
+                            <h3>Biology</h3>
+                            <i class="fas fa-seedling fa-5x"></i> </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="cards h-90">
+                            <h3>Accounting</h3>
+                            <i class="fas fa-money-bill-wave fa-5x"></i> </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="cards h-90">
+                            <h3>IT</h3>
+                            <i class="fas fa-desktop fa-5x"></i> </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="cards h-90">
+                            <h3>Business</h3>
+                            <i class="fas fa-piggy-bank fa-5x"></i> </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="panel">
+                <div class="row">
+                    <div class="col-sm" id="home-post-left">
+                        <div class="card h-100" id="home-post-left-card">
+                            <div class="card-body">
+                                <div class="card-title">Make Your Advertisement</div>
+                                <div class="search-description">
+                                    This is the place where you could use your knowledge to teach those who needs education. All you have to do is login, fill in tutor related information related to yourself, and post.<br><br> It is as simple as that.<br><br>                                    Not sure if you have what it takes, please follow this link below and contact us
+                                </div>
+                                <a href="about.html #contact-division" class="follow-link">Click Here</a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm" id="home-post-right">
+                        <div class="card h-100" id="home-post-right-card">
+                            <img class="card-img-top" src="../icons/post.png" alt="Card image cap">
+                            <div class="card-body">
+                                <div class="card-title">Want To Be A Tutor?</div>
+                                <a href="splash.html" class="btn btn-primary btn-lg">Post</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-    </div>
+        <div class="footer">
+            <a href="about.html #contact-division" class="footer-buttons-left">Contact Us</a><a href="about.html #terms-division" class="footer-buttons-left">T&C's</a>
+            <i class="far fa-dot-circle"></i> Page Created By Andrew Hart - Cape Town - 2020 <i class="far fa-dot-circle"></i>
+            <a href="about.html #faq-division" class="footer-buttons-right">FAQ</a><a href="about.html #social-division" class="footer-buttons-right">Social</a>
 
-    <div class="footer">
-        <a href="about.html #contact-division" class="footer-buttons-left">Contact Us</a><a href="about.html #terms-division" class="footer-buttons-left">T&C's</a>
-        <i class="far fa-dot-circle"></i> Page Created By Andrew Hart - Cape Town - 2020 <i class="far fa-dot-circle"></i>
-        <a href="about.html #faq-division" class="footer-buttons-right">FAQ</a><a href="about.html #social-division" class="footer-buttons-right">Social</a>
+        </div>
 
-    </div>
+        <div class="small-footer">
+            <i class="far fa-dot-circle"></i> Page Created By Andrew Hart - Cape Town - 2020 <i class="far fa-dot-circle"></i>
 
-    <div class="small-footer">
-        <i class="far fa-dot-circle"></i> Page Created By Andrew Hart - Cape Town - 2020 <i class="far fa-dot-circle"></i>
+        </div>
 
-    </div>
-
-    <div class="super-small-footer">
-        <i class="far fa-dot-circle"></i> Page Created By Andrew Hart <i class="far fa-dot-circle"></i>
-    </div>
+        <div class="super-small-footer">
+            <i class="far fa-dot-circle"></i> Page Created By Andrew Hart <i class="far fa-dot-circle"></i>
+        </div>
 
 </body>
 

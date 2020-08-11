@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <meta name="description" content="The HTML5 Herald">
     <meta name="author" content="SitePoint">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://localhost/tutoring_website/final/icons/fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="http://localhost/tutoring_website/final/icons/fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.css">
     <link rel="stylesheet" href="../css/design.css">
 </head>
 
@@ -52,53 +54,55 @@
             while ($row = $result->fetch_assoc()) {
         ?>
 
-                <div class="tutor-display">
-                    <div class="row">
-                        <div class="tutor-display-left">
-                            <img class="tutor-display-image" src="../images/<?php echo $row['Images'] ?>" alt="">
-                        </div>
-                        <div class="tutor-display-right">
-                            <div class="info">
-                                <label class="label-tutor-heading"><?php echo $row['FirstName'] . " " . $row['LastName'] ?></label><br>
-                                <label class="label-tutor-cell"><?php echo $row['Contact'] ?></label><br>
-                                <label class="label-info"><?php echo $row['User_Email'] ?></label><br>
-                            </div>
-
-                        </div>
-                        <div class="info-2">
-                            <label class="label-tutor-heading"><?php echo $row['Subjects'] ?> @ R <?php echo $row['LessonPrice'] ?> / hr</label><br>
-                            <label class="label-info">Location : <?php echo $row['Suburb'] ?></label><br>
-                            <label class="label-info">Date Of Birth : <?php echo $row['DateOfBirth'] ?></label><br>
-                        </div>
-
-                    </div>
-
-                    <div class="row" style="background-color :rgb(46, 46, 46); border-radius : 20px;">
-
-                        <div class="col-sm" id="bottom">
-                            <label class="column-heading">Description of tutor</label><br>
-                            <p><?php echo $row['Descriptions'] ?></p><br>
-                            <label class="column-heading">Preferred age categories</label><br>
-                            <p><?php echo $row['Ageranges'] ?> </p><br>
-                            <label class="column-heading">Transport status</label><br>
-                            <p><?php echo $row['OwnTransport'] ?></p>
-
-                        </div>
-                        <div class="col-sm" id="bottom">
-                            <label class="column-heading">Experience in teaching <?php echo $row['Subjects'] ?></label><br>
-                            <p><?php echo $row['TutoringExperience'] ?></p><br>
-                            <label class="column-heading">Qualification</label><br>
-                            <p><?php echo $row['Qualification'] ?></p><br>
-                            <label class="column-heading">Place where education took place</label><br>
-                            <p><?php echo $row['PlaceOfEducation'] ?></p><br>
-                            <label class="column-heading">Completed studies during</label><br>
-                            <p><?php echo $row['YearComplete'] ?></p><br>
-                            <label class="column-heading">Driving radius</label>
-                            <p> <?php echo $row['DrivingRadius'] ?> km</p>
-
-                        </div>
-                    </div>
+        <div class="tutor-display">
+            <div class="row">
+                <div class="tutor-display-left">
+                    <img class="tutor-display-image" src="../images/<?php echo $row['Images'] ?>" alt="">
                 </div>
+                <div class="tutor-display-right">
+                    <div class="info">
+                        <label
+                            class="label-tutor-heading"><?php echo $row['FirstName'] . " " . $row['LastName'] ?></label><br>
+                        <label class="label-tutor-cell"><?php echo $row['Contact'] ?></label><br>
+                        <label class="label-info"><?php echo $row['User_Email'] ?></label><br>
+                    </div>
+
+                </div>
+                <div class="info-2">
+                    <label class="label-tutor-heading"><?php echo $row['Subjects'] ?> @ R
+                        <?php echo $row['LessonPrice'] ?> / hr</label><br>
+                    <label class="label-info">Location : <?php echo $row['Suburb'] ?></label><br>
+                    <label class="label-info">Date Of Birth : <?php echo $row['DateOfBirth'] ?></label><br>
+                </div>
+
+            </div>
+
+            <div class="row" style="background-color : #292b2c; border-radius : 20px;">
+
+                <div class="col-sm" id="bottom">
+                    <label class="column-heading">Description of tutor</label><br>
+                    <p><?php echo $row['Descriptions'] ?></p><br>
+                    <label class="column-heading">Preferred age categories</label><br>
+                    <p><?php echo $row['Ageranges'] ?> </p><br>
+                    <label class="column-heading">Transport status</label><br>
+                    <p><?php echo $row['OwnTransport'] ?></p>
+
+                </div>
+                <div class="col-sm" id="bottom">
+                    <label class="column-heading">Experience in teaching <?php echo $row['Subjects'] ?></label><br>
+                    <p><?php echo $row['TutoringExperience'] ?></p><br>
+                    <label class="column-heading">Qualification</label><br>
+                    <p><?php echo $row['Qualification'] ?></p><br>
+                    <label class="column-heading">Place where education took place</label><br>
+                    <p><?php echo $row['PlaceOfEducation'] ?></p><br>
+                    <label class="column-heading">Completed studies during</label><br>
+                    <p><?php echo $row['YearComplete'] ?></p><br>
+                    <label class="column-heading">Driving radius</label>
+                    <p> <?php echo $row['DrivingRadius'] ?> km</p>
+
+                </div>
+            </div>
+        </div>
 
         <?php
             }
@@ -111,14 +115,18 @@
         ?>
     </div>
     <div class="footer">
-        <a href="../html/about.html #contact-division" class="footer-buttons-left">Contact Us</a><a href="../html/about.html #terms-division" class="footer-buttons-left">T&C's</a>
-        <i class="far fa-dot-circle"></i> Page Created By Andrew Hart - Cape Town - 2020 <i class="far fa-dot-circle"></i>
-        <a href="../html/about.html #faq-division" class="footer-buttons-right">FAQ</a><a href="../html/about.html #social-division" class="footer-buttons-right">Social</a>
+        <a href="../html/about.html #contact-division" class="footer-buttons-left">Contact Us</a><a
+            href="../html/about.html #terms-division" class="footer-buttons-left">T&C's</a>
+        <i class="far fa-dot-circle"></i> Page Created By Andrew Hart - Cape Town - 2020 <i
+            class="far fa-dot-circle"></i>
+        <a href="../html/about.html #faq-division" class="footer-buttons-right">FAQ</a><a
+            href="../html/about.html #social-division" class="footer-buttons-right">Social</a>
 
     </div>
 
     <div class="small-footer">
-        <i class="far fa-dot-circle"></i> Page Created By Andrew Hart - Cape Town - 2020 <i class="far fa-dot-circle"></i>
+        <i class="far fa-dot-circle"></i> Page Created By Andrew Hart - Cape Town - 2020 <i
+            class="far fa-dot-circle"></i>
 
     </div>
 

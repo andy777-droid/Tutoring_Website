@@ -45,10 +45,10 @@
 
 
             <div class="row">
-                <div class="col-sm">
+                <div class="col-sm" id="login-dash-col">
                     <div class="card h-100" id="splash-card-1">
                         <div class="card-body" id="splash-text">
-                            <div class="card-title">Make a Post</div>
+                            <div class="card-title">Create Advertisement</div>
                         </div>
                         <form style="margin: 0; padding: 0;" action="../php/login-dash.php" method="POST">
                             <input type="text" name="email" id="email" style="display: none;" value="<?php
@@ -72,19 +72,36 @@
 
                     </div>
                 </div>
-                <div class="col-sm">
-                    <div class="card h-100" id="splash-card-2">
-                        <div class="card-body" id="splash-text">
-                            <div class="card-title">Want a new password?</div>
+                <div class="col-sm" id="login-dash-col">
+                    <div class="card h-100 " id="splash-card-2">
+                        <div class="card-body " id="splash-text">
+                            <div class="card-title">Change Account Password</div>
                         </div>
-                        <form style="margin: 0; padding: 0;" action="../php/change-password.php" method="POST">
+                        <form style="margin: 0; padding: 0; " action="../php/change-password.php" method="POST">
+                            <input type="text" name="email" id="email" style="display: none;" value="<?php
+                            if($_GET){
+                                echo $_GET['user'];       
+                            }
+                            ?>">
+                            <button type="submit" class="btn btn-primary btn-lg" id="splash-button" style="width: 80%;">Change</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-sm" id="login-dash-col">
+                    <div class="card h-100" id="splash-card-3">
+                        <div class="card-body" id="splash-text">
+                            <div class="card-title">Remove Advertisement</div>
+                        </div>
+                        <form style="margin: 0; padding: 0;" action="../php/remove-advert.php" method="POST">
                             <input type="text" name="email" id="email" style="display: none;" value="<?php
                             if($_GET){
                                 echo $_GET['user'];       
                             }
                             ?>">
 
-                            <button type="submit" class="btn btn-primary btn-lg" id="splash-button" style="width: 80%;">Change</button>
+                            <button type="submit" class="btn btn-primary btn-lg" id="splash-button" style="width: 80%;">Remove</button>
+                        </form>
                     </div>
                 </div>
 
