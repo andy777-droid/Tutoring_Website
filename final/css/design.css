@@ -535,6 +535,10 @@ h3 {
     .reg {
         width: 60%
     }
+    .change-password {
+        width: 80%;
+        margin: 0 auto 0 auto;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -566,7 +570,7 @@ h3 {
     }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 575px) {
     .small-footer {
         display: none;
     }
