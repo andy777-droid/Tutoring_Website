@@ -21,9 +21,9 @@ if ($resultCheck > 0) {
     $rows = mysqli_fetch_assoc($result);
     if (($rows['Email'] == $email) && ($rows['Passwords'] == $password)) {
         $update = mysqli_query($conn, "update user_login set user_login.Passwords = '" . $updatedpassword . "' WHERE user_login.Email = '" . $email . "'") or die("Unable to read data");
-        header("Location: http://localhost/tutoring_website/final/html/splash.html");
+        header("Location: http://localhost/tutoring_website/final/html/home.html?msg=updated");
     } else {
-        header("Location: http://localhost/tutoring_website/final/html/change-password.html");
+        header("Location: http://localhost/tutoring_website/final/html/home.html?msg=not-updated");
     }
 }
 

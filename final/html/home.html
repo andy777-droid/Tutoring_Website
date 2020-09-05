@@ -21,8 +21,14 @@
 echo "<script>alert('Advertisement deleted succesfully')</script>";
         }     
         if($_GET['msg'] == 'failed'){
-            echo "<script>alert('Advertisement was not deleted')</script>";
+            echo "<script>alert('Please enter a valid advertisement and try again')</script>";
                     }    
+                    if($_GET['msg'] == 'updated'){
+                        echo "<script>alert('Password has been changed!')</script>";
+                                }    
+                                if($_GET['msg'] == 'not-updated'){
+                                    echo "<script>alert('Password could not be changed')</script>";
+                                            }    
     }
     ?>
 

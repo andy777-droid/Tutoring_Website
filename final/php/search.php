@@ -53,7 +53,7 @@
             $age = $_POST['agerange'];
 
 
-            $result = mysqli_query($conn, "select * from tutor_post, user_login where tutor_post.User_Email = user_login.Email and user_login.Gender " . $gender . " and tutor_post.Suburb " . $suburb . " and tutor_post.Subjects " . $subject . " and tutor_post.OwnTransport " . $transport . " and tutor_post.Ageranges " . $age . "") or die("Unable to read data");
+            $result = mysqli_query($conn, "select * from tutor_post, user_login where tutor_post.User_Email = user_login.Email and user_login.Gender " . $gender . " and tutor_post.Suburb " . $suburb . " and tutor_post.Subjects " . $subject . " and tutor_post.OwnTransport " . $transport . " and tutor_post.Ageranges " . $age . " ORDER BY `tutor_post`.`idtutor` ASC") or die("Unable to read data");
 
             $resultCheck = mysqli_num_rows($result);
 

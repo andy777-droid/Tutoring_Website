@@ -24,7 +24,7 @@ $db = "tutoring_website";
 // Create connection
 $conn = new mysqli($host, $user, $pass, $db) or die("Unable to connect to database " + $db);
 
-$insert = "insert into tutor_post (idtutor, User_Email, Subjects, Suburb, TutoringExperience, Qualification, PlaceOfEducation, YearComplete, OwnTransport, LessonPrice, Descriptions, Ageranges, DrivingRadius, Images) VALUES (null,'$email', '$subject', '$suburb', '$experience', '$qualification', '$education','$complete', '$owntransport', '$price', '$bio', '$agerange', '$radius', '$profile')";
+$insert = "insert into tutor_post (idtutor, User_Email, Subjects, Suburb, TutoringExperience, Qualification, PlaceOfEducation, YearComplete, OwnTransport, LessonPrice, Descriptions, Ageranges, DrivingRadius, Images) VALUES (null,'$email', '$subjects', '$suburb', '$experience', '$qualification', '$education','$complete', '$owntransport', '$price', '$bio', '$agerange', '$radius', '$profile')";
 $stmt = $conn->prepare($insert);
 $stmt->execute();
 header("Location: http://localhost/tutoring_website/final/html/search.html");

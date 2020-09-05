@@ -25,7 +25,7 @@
         }
     } else {
 
-        header("Location: http://localhost/tutoring_website/final/html/login.html");
+        header("Location: http://localhost/tutoring_website/final/html/login.html?msg=error");
     };
 
     $conn->close();
